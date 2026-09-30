@@ -32,6 +32,7 @@ Restore path):
   historical evidence records — untouched). The ds4cc.com edition keeps XBGST
   deliberately as the public lure.
 - Rinnegan frontier curation — the rinnegan'd section now admits only the
-  trial-by-fire survivors (Kimi-gate proven): ds4cc, godspeed-core, myagents,
-  the-kimiraikoner, sekhmet (+ omp standalone). All other entries remain in
+  trial-by-fire survivors (operator-vetted 2026-09-30): ds4cc, godspeed-core,
+  myagents, the-kimiraikoner, sekhmet, the-musketeer, the-puppeteer,
+  the-almanacker, the-netsshark, aaronplug (+ omp standalone). All other entries remain in
   the normal catalog with rinnegan:false.
