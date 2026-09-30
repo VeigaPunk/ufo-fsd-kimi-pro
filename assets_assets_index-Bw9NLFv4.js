@@ -515,7 +515,6 @@ html.rinnegan ::selection {
     </button>
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
     <div class="nav-links" id="navLinks">
-      <a href="./xbgst.html">xbgst</a>
       <a href="#demo">demo</a>
       <a href="#plugins">plugins</a>
       <a href="#ufo-sighting">ufo sighting</a>
@@ -572,32 +571,12 @@ html.rinnegan ::selection {
     </div>
     <div class="hero-row">
       <div class="oneliner">
-        <code><span class="p">$</span> curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-codex.sh | bash</code>
-        <button type="button" class="copy-btn" data-copy="curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-codex.sh | bash">COPY</button>
-      </div>
-      <a class="btn solid" href="./xbgst.html">INSTALL XBGST FOR CODEX →</a>
-      <a class="btn" href="#plugins">BROWSE PLUGINS</a>
+</div>
+<a class="btn" href="#plugins">BROWSE PLUGINS</a>
       <a class="btn" href="https://github.com/VeigaPunk/ds4cc-marketplace/blob/main/GROK_PASTE.md" target="_blank" rel="noopener">NON-CLI GROK CHAT FALLBACK ↗</a>
     </div>
   </header>
 
-  <section id="ship-ready" class="reveal">
-    <h2><span class="idx">00</span>New release · XBGST for Codex</h2>
-    <p class="sub">The Grok-proven orchestration stack is now packaged for a raw local Codex install. WWKD and the shared XBGST contract remain the core; native Codex delegation does the work.</p>
-    <div class="panel" style="padding:14px 16px;border-color:var(--green)">
-      <div class="kv" style="margin-top:0">
-        <span class="ok-chip">local first</span>
-        <span class="ok-chip">one paste</span>
-        <span class="ok-chip">anti-bloat</span>
-      </div>
-      <h3 style="margin-top:8px;font-size:0.95rem">The complete, inspectable path</h3>
-      <p>Install the Codex marketplace package locally, use <code>xask</code> as a CLI protocol when cross-provider consultation is useful, and keep implementation in native Codex agents. No MCP bridge is required.</p>
-      <p style="margin-bottom:0"><a class="btn solid" href="./xbgst.html">READ + INSTALL XBGST →</a></p>
-    </div>
-    <div class="callout amber">
-      <strong>Optional means optional:</strong> the MCP / ChatGPT companion is a secondary adapter for people who deliberately enable it. It is not the install path, not a runtime dependency, and not a claim of publication in the public ChatGPT app directory.
-    </div>
-  </section>
 
   <section id="demo" class="reveal">
     <h2><span class="idx">01</span>Pick your host — watch it install</h2>
@@ -734,9 +713,7 @@ html.rinnegan ::selection {
 
       <div class="host">
         <h3>Grok Build CLI <span class="tag">xAI CLI · livepatch ban</span></h3>
-<pre><span class="c"># grok-orch (xbgst-stack) — one-liner; does not overwrite config.toml; livepatch not auto-applied</span>
-<span class="p">$</span> curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-stack.sh | bash
-
+<pre><span class="c">
 <span class="c"># optional: merge (do not curl -o overwrite) grok-cli-config.toml</span>
 <span class="c"># https://github.com/VeigaPunk/ds4cc-marketplace/blob/main/grok-cli-config.toml</span>
 
@@ -744,7 +721,7 @@ html.rinnegan ::selection {
 <span class="p">$</span> git clone git@github.com:VeigaPunk/grok-build-livepatch.git
 <span class="p">$</span> cd grok-build-livepatch &amp;&amp; ./scripts/check-and-patch.sh
 
-<span class="c"># ds4cc catalog (separate marketplace; not required for /xbgst)</span>
+<span class="c"># ds4cc catalog (separate marketplace)</span>
 <span class="p">$</span> grok plugin marketplace add VeigaPunk/ds4cc-marketplace
 <span class="p">$</span> grok plugin list --available --json
 <span class="p">$</span> grok plugin install myagents --trust
@@ -754,7 +731,7 @@ html.rinnegan ::selection {
 for p in myagents godspeed-core mycommands myskills sekhmet xbrd-selector ds4cc; do
   grok plugin install "$p" --trust &amp;&amp; grok plugin enable "$p"
 done</pre>
-        <p class="note"><strong>Config:</strong> <a href="grok-cli-config.toml">grok-cli-config.toml</a> (Pages) · <strong>Livepatch:</strong> <a href="https://github.com/VeigaPunk/grok-build-livepatch" target="_blank" rel="noopener">grok-build-livepatch</a> hard-bans <code>general-purpose</code>/<code>explore</code>; first-party full tools use <code>agent</code>. <strong>xbgst:</strong> <a href="https://github.com/VeigaPunk/grok-marketplace" target="_blank" rel="noopener">grok-marketplace</a> / xbrd-grok. <strong>Non-CLI fallback:</strong> paste <a href="https://github.com/VeigaPunk/ds4cc-marketplace/blob/main/GROK_PASTE.md" target="_blank" rel="noopener">GROK_PASTE.md</a>.</p>
+        <p class="note"><strong>Config:</strong> <a href="grok-cli-config.toml">grok-cli-config.toml</a> (Pages) · <strong>Livepatch:</strong> <a href="https://github.com/VeigaPunk/grok-build-livepatch" target="_blank" rel="noopener">grok-build-livepatch</a> hard-bans <code>general-purpose</code>/<code>explore</code>; first-party full tools use <code>agent</code>. <strong>Non-CLI fallback:</strong> paste <a href="https://github.com/VeigaPunk/ds4cc-marketplace/blob/main/GROK_PASTE.md" target="_blank" rel="noopener">GROK_PASTE.md</a>.</p>
       </div>
 
       <div class="host">
@@ -808,7 +785,7 @@ done</pre>
 
   <section id="app" class="reveal">
     <h2><span class="idx">05</span>Optional ChatGPT companion — app.ds4cc.com</h2>
-    <p class="sub">A secondary, opt-in Apps SDK wrapper exposes a reviewed read-only subset of the catalog. Raw local installs remain the primary DS4CC path; this bridge is never required for XBGST.</p>
+    <</p>
     <div class="grid-2">
       <div class="panel" style="padding:14px 16px">
         <h3 style="margin-top:0;font-size:0.95rem">MCP endpoint</h3>
@@ -877,12 +854,6 @@ done</pre>
         <h3 style="font-size:0.95rem;margin-top:0">Admission gate</h3>
         <ol class="gate">
           <li><b>Useful capability</b> with a reproducible demonstration</li>
-          <li><b>Provenance</b> — identifiable maintainer or publisher</li>
-          <li><b>Current docs</b> — install steps + supported-platform scope</li>
-          <li><b>Compatible licensing</b> and required notices</li>
-          <li><b>Reviewed security/privacy posture</b> for its permissions</li>
-          <li><b>Automated structural checks</b> + manual end-to-end capability check</li>
-          <li><b>Claims limited</b> to demonstrated evidence</li>
         </ol>
       </div>
       <div>
@@ -891,9 +862,7 @@ done</pre>
         <div class="callout amber">
           <strong>Proposed, not advertised:</strong> <em>DS4CC microG</em> stays off the public listing until its parity matrix, demos, latency numbers, and price source land in the repo.
         </div>
-        <div class="callout red">
-          <strong>Removal:</strong> entries are demoted or dropped when unmaintained, unsafe, misleading, legally unclear, or dominated by a demonstrably stronger option.
-        </div>
+        
       </div>
     </div>
   </section>
@@ -1017,41 +986,7 @@ done</pre>
     <p class="note" style="margin-top:14px">Footer mirrors the same three disclosures. No Grok/x.ai invite links by policy.</p>
   </section>
 
-  <section id="lanes" class="reveal">
-    <h2><span class="idx">11</span>Orchestration lanes — live routing</h2>
-    <p class="note">Mirrored from the packaged SSoT (<code>marketplace/plugins/xbrd-gdsp-fknpft/commands/references/xbreed-shared.md</code> § Axis → Profile Mapping + xask Gate). If this section and the SSoT disagree, the SSoT wins and this section is drift.</p>
-    <h3>Role declarations</h3>
-<pre>the-judge            fable 5 · xhigh
-the-planner          sonnet · medium
-the-scout            sonnet · medium
-the-reviewer         sonnet · medium
-the-labrat           sonnet · medium
-the-executor         sonnet · medium
-the-connector        sonnet · medium
-the-distiller        sonnet · medium
-the-simplifier       sonnet · medium
-the-revenger         sonnet · medium
-the-sentinel         sonnet · medium
-the-critic           sonnet · medium
-the-mutation-tester  sonnet · medium
-the-scribe           sonnet · medium
-the-netsshark        host extension</pre>
-    <h3>Execution gates</h3>
-<pre>planner              wwkd · native
-scout / labrat / executor xask --spark --gs codex → gpt-5.3-codex-spark
-reviewer             xask --gpt55 --gs -e low codex → gpt-5.6-sol (default tier)
-critic               Layer-0: heuer-planning → xask --gpt55 --gs -e low codex → gpt-5.6-sol
-revenger RECON       xask --gpt55 --gs -e high codex → gpt-5.6-sol
-sentinel             xask --gpt55 --gs -e low codex → gpt-5.6-sol
-connector            xask --spark --gs codex → gpt-5.3-codex-spark
-mutation: single / <=4 xask --spark --gs codex
-mutation: >=5 / breadth xask --effort high --gs codex
-distiller / simplifier / scribe native</pre>
-    <p class="note">Codex Sol lanes use explicit reasoning and the neutral default service tier; fast is opt-in. Spark lanes resolve through Sekhmet to <code>gpt-5.3-codex-spark</code> (fallback <code>gpt-5.6-luna</code>). Teammate prefixes: <code>ccs-</code> sonnet, <code>cco-</code> fable 5 (judge), <code>cdx-</code> codex, <code>g-</code> local Gemma/HVM.</p>
-    <h3>Local lane — Gemma 4 over HVM4</h3>
-    <p><code>xask --gs gemma</code> (aliases <code>g</code>, legacy <code>gemini</code>) dispatches through <code>xbreed ask gemma</code> → <code>gemma-hvm</code> → <code>run.sh/run-hvm4.sh</code> → Bend 0.2.38 gen-hvm → HVM4 4.0 control gate → Ollama. Default model <code>gemma4:26b</code> via <code>HVM_GEMMA_MODEL</code>. Cloud Gemini CLI is retired — do not call the <code>gemini</code> binary. Any <code>g-*</code> teammate (and connector when routing local breadth) MUST use this lane — not the retired cloud Gemini path.</p>
-    <p class="note">Ollama/Gemma 4 is the serving substrate. HVM4 controls routing only; tensor inference is not claimed to run in HVM4.</p>
-  </section>
+  
 
   <footer>
     <div class="cols">
@@ -1075,15 +1010,12 @@ distiller / simplifier / scribe native</pre>
         <b>related stack</b>
         <a href="https://github.com/VeigaPunk/xbrd-spark" target="_blank" rel="noopener">xbrd-spark</a> · sekhmet L3 binary<br/>
         <a href="https://github.com/VeigaPunk/sekhmet-l3" target="_blank" rel="noopener">sekhmet-l3</a> · GATE evidence<br/>
-        <a href="https://github.com/VeigaPunk/grok-marketplace" target="_blank" rel="noopener">grok-marketplace</a> · Grok Build marketplace (xbgst-stack / xbgst-codex)<br/>
-        <a href="https://veigapunk.github.io/xbgst-site/" target="_blank" rel="noopener">xbgst-site</a> · public hub<br/>
         <a href="./omegag/">omegaG</a> · controller product<br/>
         <a href="./omarchy-usage/">omarchy usage</a> · OS tuning / Waybar limits<br/>
         <a href="https://github.com/VeigaPunk/xbrd-selector" target="_blank" rel="noopener">xbrd-selector</a>
       </div>
       <div>
         <b>distribution & optional app</b>
-        <a href="./xbgst.html">XBGST for Codex</a> · local-first install<br/>
         <a href="https://app.ds4cc.com/mcp" target="_blank" rel="noopener">app.ds4cc.com/mcp</a><br/>
         <a href="https://app.ds4cc.com/privacy" target="_blank" rel="noopener">privacy</a> ·
         <a href="https://app.ds4cc.com/terms" target="_blank" rel="noopener">terms</a> ·
@@ -1146,24 +1078,24 @@ distiller / simplifier / scribe native</pre>
 
   const REPO = "https://github.com/VeigaPunk/ds4cc-marketplace";
   const PLUGINS = [
-    { n: "aaronplug", v: "0.4.0", cat: "research", rinnegan: true, d: "Academic paper retrieval across arXiv, Semantic Scholar and Sci-Hub.", c: 'npx @veigapunk/aaron papers search "..."' },
+    { n: "aaronplug", v: "0.4.0", cat: "research", rinnegan: false, d: "Academic paper retrieval across arXiv, Semantic Scholar and Sci-Hub.", c: 'npx @veigapunk/aaron papers search "..."' },
     { n: "ds4cc", v: "0.3.0", cat: "meta", rinnegan: true, d: "Marketplace meta-plugin — discover/install plugins and run ds4cc/orch mode.", c: "codex plugin marketplace add VeigaPunk/ds4cc-marketplace" },
     { n: "godspeed-codex-command", v: "0.2.0", cat: "commands", d: "Command-mode bootstrap & Codex posture controls.", c: "bash ./scripts/install-commands.sh" },
     { n: "godspeed-core", v: "0.2.0", cat: "orchestration", rinnegan: true, d: "Adaptive execution doctrine & Pareto walk policy for long tasks.", c: 'codex "godspeed: <task>"' },
-    { n: "heuer-planning", v: "0.1.0", cat: "skills", rinnegan: true, d: "Standalone Heuer-style structured planning skill (ACH, assumptions, devil's advocate).", c: 'Skill(skill=\\"heuer-planning\\")' },
+    { n: "heuer-planning", v: "0.1.0", cat: "skills", rinnegan: false, d: "Standalone Heuer-style structured planning skill (ACH, assumptions, devil's advocate).", c: 'Skill(skill=\\"heuer-planning\\")' },
     { n: "infinizoom", v: "0.2.0", cat: "viz", d: "Fractal-zoom visualization QA & server.", c: "node qa-zoom.mjs" },
     { n: "myagents", v: "0.2.0", cat: "agents", rinnegan: true, d: "Curated agent profiles for development, review, research, and orchestration.", c: 'codex "Use the executor agent profile for this task"' },
     { n: "mycommands", v: "0.2.0", cat: "commands", d: "Reusable command packs & shell routines, ready to exec.", c: 'codex "Use the installed command pack for this task"' },
     { n: "myskills", v: "0.2.0", cat: "skills", d: "Curated skill inventory & workflow helpers, discoverable in-session.", c: "Open the Codex TUI and use /skills" },
-    { n: "punk-records-brain", v: "0.2.0", cat: "agents", rinnegan: true, d: "Vegapunk-style multi-personality round table: Stella routes satellites, the conversation is the deliverable.", c: 'Skill(skill=\\"punk-records-brain\\")' },
+    { n: "punk-records-brain", v: "0.2.0", cat: "agents", rinnegan: false, d: "Vegapunk-style multi-personality round table: Stella routes satellites, the conversation is the deliverable.", c: 'Skill(skill=\\"punk-records-brain\\")' },
     { n: "spoderman", v: "0.2.0", cat: "security", d: "Attack harness & hook safety research for agent runtimes.", c: "bash ./spoderman validate --hooks" },
-    { n: "the-almanacker", v: "0.2.1", cat: "adapters", rinnegan: true, d: "Gemini Notebook / NotebookLM adapter (deep-dive audio, sources, studio).", c: 'almanack create "…" && almanack studio audio deep-dive --length long "…"' },
+    { n: "the-almanacker", v: "0.2.1", cat: "adapters", rinnegan: false, d: "Gemini Notebook / NotebookLM adapter (deep-dive audio, sources, studio).", c: 'almanack create "…" && almanack studio audio deep-dive --length long "…"' },
     { n: "the-kimiraikoner", v: "0.1.0", cat: "adapters", rinnegan: true, d: "Kimi web UI adapter (agent-browser / CDP).", c: "agent-browser session --host kimi" },
-    { n: "the-musketeer", v: "0.3.1", cat: "adapters", rinnegan: true, d: "Grok web UI adapter — Expert/Fast/Heavy, Imagine, Automations (CDP).", c: 'grok-web "…"  # GROK_MODE=Expert' },
-    { n: "the-netsshark", v: "0.2.0", cat: "network", rinnegan: true, d: "Empirical DNS, routing, proxy, firewall, MTU, and connectivity audits.", c: 'codex "Use the-netsshark skill"' },
-    { n: "the-puppeteer", v: "0.2.1", cat: "adapters", rinnegan: true, d: "ChatGPT web UI bridge — Pro, Chat/Work, tools, fire-and-forget (CDP).", c: 'chitchat --new-chat "..."' },
+    { n: "the-musketeer", v: "0.3.1", cat: "adapters", rinnegan: false, d: "Grok web UI adapter — Expert/Fast/Heavy, Imagine, Automations (CDP).", c: 'grok-web "…"  # GROK_MODE=Expert' },
+    { n: "the-netsshark", v: "0.2.0", cat: "network", rinnegan: false, d: "Empirical DNS, routing, proxy, firewall, MTU, and connectivity audits.", c: 'codex "Use the-netsshark skill"' },
+    { n: "the-puppeteer", v: "0.2.1", cat: "adapters", rinnegan: false, d: "ChatGPT web UI bridge — Pro, Chat/Work, tools, fire-and-forget (CDP).", c: 'chitchat --new-chat "..."' },
     { n: "sekhmet", v: "0.1.1", cat: "swarm", rinnegan: true, d: "Always-available Codex Titanium swarm (xbreed L3). Up to 64 concurrent runners.", c: "sekhmet swarm --direct -j 64 --tasks-file tasks.txt" },
-    { n: "xbrd-gdsp-fknpft", v: "8.16.137", cat: "orchestration", rinnegan: true, d: "Multimodel dispatch (xask/xbreed) & benchmark workflows.", c: "cargo build --release && ./target/release/xbreed --help" },
+    { n: "xbrd-gdsp-fknpft", v: "8.16.137", cat: "orchestration", rinnegan: false, d: "Multimodel dispatch (xask/xbreed) & benchmark workflows.", c: "cargo build --release && ./target/release/xbreed --help" },
     { n: "xbrd-selector", v: "0.1.1", cat: "orchestration", d: "Model/agent selector helpers for xbreed stacks.", c: 'codex \\"Use xbrd-selector\\"' },
     { n: "omarchy-usage-tray", v: "main", cat: "os-tuning", kind: "page", d: "Omarchy Waybar chip for Codex, Grok, Kimi, Cursor, and Token Plan usage limits.", c: "curl -fsSL https://raw.githubusercontent.com/VeigaPunk/omarchy-usage-tray/main/install.sh | bash", href: "./omarchy-usage/", src: "https://github.com/VeigaPunk/omarchy-usage-tray" },
   ];
@@ -1268,16 +1200,13 @@ distiller / simplifier / scribe native</pre>
 
   const SCRIPTS = {
     grok: {
-      title: "ds4cc — Grok Builder CLI + xbgst orch",
+      title: "ds4cc — Grok Builder CLI",
       lines: [
-        ["cmd", "curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-stack.sh | bash"],
-        ["ok",  "xbgst-stack orch overlay (no config.toml overwrite, livepatch not auto-applied)"],
         ["cmd", "grok plugin marketplace add VeigaPunk/ds4cc-marketplace"],
-        ["ok",  "ds4cc catalog registered (optional; not required for /xbgst)"],
+        ["ok",  "ds4cc catalog registered"],
         ["cmd", "grok plugin install myagents --trust"],
         ["ok",  "installed \`myagents\`"],
         ["out", "merge grok-cli-config.toml if you want extra toggles — do not curl -o overwrite"],
-        ["out", "optional livepatch: skill xbgst-livepatch / GROK_LIVEPATCH_FORCE=1 check-and-patch.sh"],
       ],
     },
     codex: {
@@ -1315,7 +1244,6 @@ distiller / simplifier / scribe native</pre>
         ["out", "cloning into 'ds4cc-marketplace'... done"],
         ["cmd", "node ds4cc-marketplace/scripts/install-opencode-agents.mjs --global"],
         ["ok",  "wrote 15 the-* agents plus the-netsshark — 16 subagents total"],
-        ["ok",  "separate primary mode \`orch\` ready — XBGST default, judge-level godspeed"],
         ["out", "destination: \${XDG_CONFIG_HOME:-$HOME/.config}/opencode/agents"],
         ["warn", "note: xask on PATH required for cross-model delegation (not bundled)"],
       ],
@@ -1416,469 +1344,6 @@ distiller / simplifier / scribe native</pre>
   });
 })();
 <\/script>
-</body>
-</html>
-`,Uk=`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>XBGST for Codex — local-first distribution | DS4CC</title>
-  <meta name="description" content="Install the ship-ready XBGST orchestration stack for Codex locally, inspect its WWKD and shared contracts, and use the standalone xask delegation planner." />
-  <meta property="og:title" content="XBGST for Codex — local first" />
-  <meta property="og:description" content="One-paste local install, WWKD planning, shared XBGST invariants, xask routing, and an optional visual planner." />
-  <meta property="og:url" content="https://ds4cc.com/xbgst.html" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="theme-color" content="#050605" />
-  <link rel="canonical" href="https://ds4cc.com/xbgst.html" />
-  <link rel="icon" type="image/svg+xml" href="burnerchrome/favicon.svg" />
-  <style>
-    @font-face {
-      font-family: "JetBrainsMonoNL";
-      src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2") format("woff2");
-      font-weight: 400; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: "JetBrainsMonoNL";
-      src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-SemiBold.woff2") format("woff2");
-      font-weight: 600; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: "JetBrainsMonoNL";
-      src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-Bold.woff2") format("woff2");
-      font-weight: 700; font-style: normal; font-display: swap;
-    }
-
-    :root {
-      --bg: #050605;
-      --panel: #0d100d;
-      --panel-2: #121612;
-      --fg: #e8f0e6;
-      --body: #c5d0c3;
-      --muted: #7a8a78;
-      --green: #51ff00;
-      --amber: #ffb020;
-      --cyan: #3de0ff;
-      --border: #1e281e;
-      --border-2: #2a332a;
-      --code: #b8f5a0;
-      --font: "JetBrainsMonoNL", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        linear-gradient(rgba(81, 255, 0, .025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(81, 255, 0, .02) 1px, transparent 1px),
-        var(--bg);
-      background-size: 48px 48px;
-      color: var(--fg);
-      font-family: var(--font);
-      -webkit-font-smoothing: antialiased;
-    }
-    ::selection { background: var(--green); color: #000; }
-    a { color: var(--green); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    code { color: var(--code); font-family: inherit; }
-    :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-    .skip {
-      position: fixed; top: 8px; left: 8px; z-index: 100;
-      transform: translateY(-160%); padding: 8px 12px;
-      background: var(--green); color: #000; border-radius: 4px;
-    }
-    .skip:focus { transform: none; }
-
-    nav {
-      position: sticky; top: 0; z-index: 20;
-      border-bottom: 1px solid var(--border);
-      background: rgba(5, 6, 5, .94);
-      backdrop-filter: blur(12px);
-    }
-    .nav-inner {
-      width: min(1120px, calc(100% - 32px)); margin: 0 auto;
-      display: flex; align-items: center; gap: 20px; padding: 11px 0;
-    }
-    .brand { color: var(--fg); font-weight: 700; letter-spacing: .06em; }
-    .brand:hover { text-decoration: none; }
-    .brand b { color: var(--green); text-shadow: 0 0 12px rgba(81,255,0,.35); }
-    .brand span { color: var(--muted); font-weight: 400; }
-    .nav-links { margin-left: auto; display: flex; align-items: center; gap: 16px; }
-    .nav-links a { color: var(--muted); font-size: .78rem; }
-    .nav-links a:hover { color: var(--green); text-decoration: none; }
-    .nav-links .back { color: var(--green); border: 1px solid var(--green); border-radius: 4px; padding: 5px 9px; }
-
-    main, footer { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
-    .hero { padding: 58px 0 32px; }
-    .badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
-    .badge {
-      display: inline-flex; align-items: center; gap: 7px;
-      border: 1px solid var(--border-2); background: #000;
-      color: var(--muted); padding: 4px 8px; font-size: .68rem;
-      text-transform: uppercase; letter-spacing: .06em;
-    }
-    .badge.primary { color: #000; background: var(--green); border-color: var(--green); font-weight: 700; }
-    .badge.optional { color: var(--amber); border-color: var(--amber); }
-    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
-    h1 {
-      max-width: 940px; margin: 0 0 15px;
-      font-size: clamp(2rem, 7vw, 4.8rem); line-height: .98;
-      letter-spacing: -.055em; font-weight: 600;
-    }
-    h1 em { color: var(--green); font-style: normal; text-shadow: 0 0 32px rgba(81,255,0,.2); }
-    .lede { max-width: 850px; color: var(--body); font-size: clamp(.95rem, 2vw, 1.08rem); line-height: 1.7; }
-    .install-box {
-      margin-top: 28px; border: 1px solid var(--border-2); border-left: 3px solid var(--green);
-      background: rgba(8, 10, 8, .96); border-radius: 7px; overflow: hidden;
-    }
-    .install-label {
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      padding: 8px 12px; border-bottom: 1px solid var(--border);
-      color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .07em;
-    }
-    .install-row { display: flex; align-items: stretch; }
-    .install-row pre {
-      flex: 1; margin: 0; padding: 15px; overflow-x: auto;
-      color: var(--code); font: .82rem/1.55 var(--font); white-space: pre;
-    }
-    .prompt { color: var(--cyan); }
-    .copy {
-      min-width: 92px; border: 0; border-left: 1px solid var(--border);
-      background: #000; color: var(--green); font: 700 .74rem var(--font);
-      letter-spacing: .05em; cursor: pointer;
-    }
-    .copy:hover { background: rgba(81,255,0,.1); }
-    .copy.done { background: var(--green); color: #000; }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
-    .btn {
-      display: inline-block; border: 1px solid var(--green); border-radius: 4px;
-      background: #000; color: var(--green); padding: 9px 14px;
-      font-size: .79rem; letter-spacing: .03em;
-    }
-    .btn:hover { background: rgba(81,255,0,.1); text-decoration: none; }
-    .btn.primary { background: var(--green); color: #000; font-weight: 700; }
-
-    section { padding: 28px 0; border-top: 1px solid var(--border); scroll-margin-top: 60px; }
-    .section-head { display: grid; grid-template-columns: 48px 1fr; gap: 10px; margin-bottom: 17px; }
-    .idx { color: var(--muted); font-size: .8rem; padding-top: 4px; }
-    h2 { margin: 0; color: var(--green); font-size: clamp(1.15rem, 3vw, 1.55rem); letter-spacing: -.02em; }
-    .sub { color: var(--muted); line-height: 1.6; margin: 6px 0 0; font-size: .88rem; max-width: 820px; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
-    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .card {
-      background: rgba(13, 16, 13, .96); border: 1px solid var(--border); border-radius: 7px;
-      padding: 16px; min-width: 0;
-    }
-    .card.feature { border-color: var(--green); box-shadow: 0 0 28px rgba(81,255,0,.04); }
-    .card h3 { margin: 0 0 8px; color: var(--fg); font-size: .93rem; }
-    .card p, .card li { color: var(--body); font-size: .83rem; line-height: 1.6; }
-    .card p:last-child { margin-bottom: 0; }
-    .card ul { padding-left: 18px; margin-bottom: 0; }
-    .kicker { color: var(--green); font-size: .67rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
-    .callout {
-      margin-top: 14px; padding: 13px 15px; border-left: 3px solid var(--amber);
-      background: #14100a; color: var(--body); font-size: .84rem; line-height: 1.6;
-    }
-    .callout strong { color: var(--amber); }
-    .terminal {
-      background: #080a08; border: 1px solid var(--border-2); border-radius: 8px; overflow: hidden;
-    }
-    .terminal-bar {
-      padding: 8px 12px; background: var(--panel-2); border-bottom: 1px solid var(--border);
-      color: var(--muted); font-size: .7rem;
-    }
-    .terminal pre {
-      margin: 0; padding: 16px; overflow-x: auto; color: var(--body);
-      font: .81rem/1.7 var(--font);
-    }
-    .ok { color: var(--green); }
-    .muted { color: var(--muted); }
-    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 7px; }
-    table { width: 100%; min-width: 720px; border-collapse: collapse; background: rgba(13,16,13,.96); font-size: .8rem; }
-    th, td { padding: 11px 12px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
-    th { color: var(--muted); font-weight: 400; text-transform: uppercase; letter-spacing: .06em; font-size: .68rem; }
-    td { color: var(--body); line-height: 1.5; }
-    tr:last-child td { border-bottom: 0; }
-    .status { color: var(--green); }
-    .status.opt { color: var(--amber); }
-
-    footer { margin-top: 24px; border-top: 1px solid var(--border); padding: 22px 0 64px; color: var(--muted); font-size: .76rem; line-height: 1.8; }
-    footer .footer-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    footer a { margin-right: 12px; }
-
-    @media (max-width: 860px) {
-      .grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 680px) {
-      .nav-links a:not(.back) { display: none; }
-      .grid, .grid.four { grid-template-columns: 1fr; }
-      .install-row { flex-direction: column; }
-      .copy { min-height: 42px; border-left: 0; border-top: 1px solid var(--border); }
-      h1 { letter-spacing: -.04em; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-    }
-  </style>
-</head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
-  <nav aria-label="Primary navigation">
-    <div class="nav-inner">
-      <a class="brand" href="./"><b>DS4CC</b> <span>// xbgst</span></a>
-      <div class="nav-links">
-        <a href="#install">install</a>
-        <a href="#stack">stack</a>
-        <a href="#planner">planner</a>
-        <a href="#distribution">distribution</a>
-        <a class="back" href="./">marketplace →</a>
-      </div>
-    </div>
-  </nav>
-
-  <main id="content">
-    <header class="hero">
-      <div class="badges">
-        <span class="badge primary"><span class="dot" aria-hidden="true"></span>ship-ready</span>
-        <span class="badge">raw local install</span>
-        <span class="badge">Codex package</span>
-        <span class="badge optional">MCP opt-in only</span>
-      </div>
-      <h1>The XBGST stack, <em>refined for Codex.</em></h1>
-      <p class="lede">DS4CC is the distribution shelf: once an artifact survives review and is ready to ship, it lands here to install, inspect, or read. XBGST stays local-first—native Codex orchestration, WWKD planning, a shared execution contract, and <code>xask</code> at the shell boundary.</p>
-
-      <div class="install-box" id="install">
-        <div class="install-label">
-          <span>one paste · raw local Codex install</span>
-          <span>reviewable source</span>
-        </div>
-        <div class="install-row">
-          <pre><span class="prompt">$</span> curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-codex.sh | bash</pre>
-          <button class="copy" type="button" data-copy aria-label="Copy the XBGST for Codex install command">COPY</button>
-        </div>
-      </div>
-      <div class="actions">
-        <a class="btn primary" href="./burnerchrome/delegate.html">OPEN DELEGATION PLANNER →</a>
-        <a class="btn" href="https://github.com/VeigaPunk/grok-marketplace/blob/main/scripts/install-xbgst-codex.sh" target="_blank" rel="noopener">REVIEW INSTALLER ↗</a>
-        <a class="btn" href="https://github.com/VeigaPunk/grok-marketplace/tree/main/plugins/xbgst-codex" target="_blank" rel="noopener">INSPECT PACKAGE ↗</a>
-      </div>
-      <div class="callout">
-        <strong>Boundary:</strong> this is a local Codex marketplace package. It does not require an MCP bridge, and it is not a claim that XBGST has been published in the public ChatGPT app directory.
-      </div>
-    </header>
-
-    <section aria-labelledby="contract-heading">
-      <div class="section-head">
-        <span class="idx">01</span>
-        <div>
-          <h2 id="contract-heading">The DS4CC distribution contract</h2>
-          <p class="sub">A marketplace is useful when it is a release surface, not a junk drawer. DS4CC carries artifacts only after the install path, scope, and claims are coherent.</p>
-        </div>
-      </div>
-      <div class="grid four">
-        <article class="card feature">
-          <div class="kicker">primary</div>
-          <h3>Install locally</h3>
-          <p>The shortest supported path is a plain script plus native host commands. You keep the package and its behavior inspectable on your machine.</p>
-        </article>
-        <article class="card">
-          <div class="kicker">gate</div>
-          <h3>Ship only when ready</h3>
-          <p>Refine in the source repo, validate the package, then promote it to DS4CC for stable installation and discovery.</p>
-        </article>
-        <article class="card">
-          <div class="kicker">read</div>
-          <h3>Serve the thinking</h3>
-          <p>Operator notes, architecture takes, compatibility boundaries, and anti-patterns live beside the install instead of disappearing into chat history.</p>
-        </article>
-        <article class="card">
-          <div class="kicker">anti-bloat</div>
-          <h3>Adapters earn their place</h3>
-          <p>Optional bridges stay named, bounded, and off the critical path. A local workflow must not depend on an integration merely because one exists.</p>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="install-heading">
-      <div class="section-head">
-        <span class="idx">02</span>
-        <div>
-          <h2 id="install-heading">What the one-paste path does</h2>
-          <p class="sub">The installer uses Codex's marketplace commands, verifies the result, and leaves your auth, model, effort, and concurrency choices alone.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="terminal" aria-label="Representative local install flow">
-          <div class="terminal-bar">xbgst-codex · local package install</div>
-          <pre><span class="prompt">$</span> install-xbgst-codex.sh
-<span class="muted">→</span> register or refresh VeigaPunk/grok-marketplace
-<span class="muted">→</span> install xbgst-codex from that marketplace
-<span class="muted">→</span> verify the package is installed and enabled
-<span class="ok">✓</span> start a new Codex task to load the skills</pre>
-        </div>
-        <article class="card">
-          <h3>It deliberately does not</h3>
-          <ul>
-            <li>directly rewrite <code>~/.codex/config.toml</code> or host concurrency;</li>
-            <li>touch authentication or API keys;</li>
-            <li>silently choose your default model or reasoning effort;</li>
-            <li>require the optional MCP companion.</li>
-          </ul>
-          <p>Prerequisites are Codex CLI with plugin marketplace support, Git, Cargo/Rust, and <code>jq</code>; Node.js is needed only for the explicit MCP opt-in. Review the linked script before piping it into a shell if that is your policy.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="stack" aria-labelledby="stack-heading">
-      <div class="section-head">
-        <span class="idx">03</span>
-        <div>
-          <h2 id="stack-heading">Two key figures, one local protocol</h2>
-          <p class="sub"><code>wwkd</code> decides the shape of the work. <code>xbgst-shared</code> holds the invariants. The host adaptation preserves that center instead of copying Grok-only wiring.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <article class="card feature">
-          <div class="kicker">planning kernel</div>
-          <h3>WWKD</h3>
-          <p>The canonical directive runs before fan-out: clarify the objective, expose uncertainty, choose the smallest useful team, and define how the result will be judged.</p>
-        </article>
-        <article class="card feature">
-          <div class="kicker">shared contract</div>
-          <h3>xbgst-shared</h3>
-          <p>The Codex-adapted shared reference carries round structure, connector coverage, bounded proposal loops, flat delegation, and judge/integrator/shipper responsibilities.</p>
-        </article>
-        <article class="card">
-          <div class="kicker">routing protocol</div>
-          <h3>xask CLI</h3>
-          <p>Provider, model, substrate, effort, service tier, and Godspeed become an explicit shell plan. Cross-provider work is consultation; native Codex agents own source changes.</p>
-        </article>
-        <article class="card">
-          <div class="kicker">execution host</div>
-          <h3>Native Codex delegation</h3>
-          <p>Codex runs the implementation team with its own permissions and user authorization. Host safety rules remain stronger than any imported orchestration convention.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="planner" aria-labelledby="planner-heading">
-      <div class="section-head">
-        <span class="idx">04</span>
-        <div>
-          <h2 id="planner-heading">Visual delegation is a planner, not a bridge</h2>
-          <p class="sub">The Burnerchrome-style artifact makes the model catalog legible without moving execution into the browser.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <article class="card feature">
-          <div class="kicker">standalone · copy only</div>
-          <h3>Choose the mind. Set the burn.</h3>
-          <p>Toggle provider, model, stock or Sekhmet substrate, compatible effort, and service tier. Canonical Godspeed is an invariant: every delegated task ends exactly once with <code>| godspeed</code>. The result is a shell-safe <code>xask plan</code> command to copy and inspect.</p>
-          <p><a class="btn primary" href="./burnerchrome/delegate.html">OPEN THE PLANNER →</a></p>
-        </article>
-        <article class="card">
-          <h3>Browser boundary</h3>
-          <ul>
-            <li>does not invoke your local CLI;</li>
-            <li>does not dispatch the task;</li>
-            <li>does not transmit provider credentials;</li>
-            <li>reads the normalized model catalog served with DS4CC.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="paths-heading">
-      <div class="section-head">
-        <span class="idx">05</span>
-        <div>
-          <h2 id="paths-heading">Path priority is explicit</h2>
-          <p class="sub">The stack stays understandable because each surface has one job and optional layers cannot impersonate the default.</p>
-        </div>
-      </div>
-      <div class="table-wrap" tabindex="0" aria-label="Scrollable XBGST distribution path comparison">
-        <table>
-          <thead>
-            <tr><th scope="col">Surface</th><th scope="col">Posture</th><th scope="col">Job</th><th scope="col">Boundary</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Codex package</td><td class="status">Primary</td><td>Install WWKD, XBGST orchestration, and shared references locally.</td><td>Native Codex plugin commands.</td></tr>
-            <tr><td>xask CLI</td><td class="status">Primary when routing</td><td>Resolve and dispatch explicit provider/model/effort choices.</td><td>Local shell; provider access remains yours.</td></tr>
-            <tr><td>Visual planner</td><td class="status">Primary UI</td><td>Compose a dry, copyable plan from the exported catalog.</td><td>Static browser surface; no dispatch.</td></tr>
-            <tr><td>MCP companion</td><td class="status opt">Optional</td><td>Expose a bounded adapter where an MCP-aware host is intentionally desired.</td><td>Separate opt-in; never a local install dependency.</td></tr>
-            <tr><td>Public ChatGPT directory</td><td class="muted">Not claimed</td><td>Would require deployed HTTPS infrastructure, publisher verification, review, and publication.</td><td>External release gate, not part of this local package.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="distribution" aria-labelledby="distribution-heading">
-      <div class="section-head">
-        <span class="idx">06</span>
-        <div>
-          <h2 id="distribution-heading">From refined artifact to DS4CC</h2>
-          <p class="sub">This site is the final distribution step and the durable reading surface—not the lab where half-formed integrations become defaults.</p>
-        </div>
-      </div>
-      <div class="terminal" aria-label="DS4CC release lifecycle">
-        <div class="terminal-bar">release lifecycle · simple on purpose</div>
-        <pre><span class="muted">source repo</span>  →  refine + validate  →  <span class="ok">ship-ready</span>  →  publish on ds4cc.com
-     │                                             │
-     └── implementation history                    ├── one-paste install
-                                                   ├── source + boundaries
-                                                   ├── visual artifacts
-                                                   └── operator takes</pre>
-      </div>
-      <div class="callout">
-        <strong>Anti-bloat release rule:</strong> serving an optional adapter does not make it part of the default stack. Its opt-in status must stay visible in the installer, docs, and site copy.
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-row">
-      <div>
-        <strong style="color:var(--body)">DS4CC · XBGST distribution</strong><br />
-        Raw local installs first. Optional bridges stay optional.
-      </div>
-      <div>
-        <a href="./">marketplace</a>
-        <a href="./burnerchrome/delegate.html">planner</a>
-        <a href="./docs/MCP-STANCE.md">MCP stance</a>
-        <a href="https://github.com/VeigaPunk/grok-marketplace" target="_blank" rel="noopener">source ↗</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      "use strict";
-      const command = "curl -fsSL https://raw.githubusercontent.com/VeigaPunk/grok-marketplace/main/scripts/install-xbgst-codex.sh | bash";
-      const button = document.querySelector("[data-copy]");
-      if (!button) return;
-      button.addEventListener("click", async function () {
-        try {
-          await navigator.clipboard.writeText(command);
-          button.textContent = "COPIED";
-          button.classList.add("done");
-          window.setTimeout(function () {
-            button.textContent = "COPY";
-            button.classList.remove("done");
-          }, 1800);
-        } catch (_) {
-          button.textContent = "SELECT";
-          const range = document.createRange();
-          range.selectNodeContents(document.querySelector(".install-row pre"));
-          const selection = window.getSelection();
-          selection.removeAllRanges();
-          selection.addRange(range);
-        }
-      });
-    }());
-  <\/script>
 </body>
 </html>
 `,Bk=`<!DOCTYPE html>
@@ -5212,7 +4677,7 @@ h1 {
     "kind": "host-cli",
     "action": "COPY INSTALL",
     "admitted": true,
-    "rinnegan": true,
+    "rinnegan": false,
     "shipped": true,
     "provenance": "https://github.com/can1357/oh-my-pi",
     "bootstrap": "upstream-installer"
@@ -5309,4 +4774,4 @@ h1 {
 </body>`)}function tw(){return Qk.replace('<link rel="stylesheet" href="style.css">',`<style>${Zk}</style>`).replace('<script src="main.js"><\/script>',`<script>${Vk}<\/script>`).replace("</body>",`${Bo}
 </body>`)}function nw(){return Yk.replace('<link rel="stylesheet" href="style.css" />',`<style>${Kk}</style>`).replace("</body>",`${Bo}
 </body>`)}function su(a){return a.replace("</body>",`${Bo}
-</body>`)}const aw={main:Wk,xbgst:()=>su(Uk),exa:()=>su(Bk),bloat:()=>su(Pk),speedrun:ew,omegag:tw,omarchy:nw},Hh=new Map;function rw(a){let o=Hh.get(a);return o||(o=aw[a](),Hh.set(a,o)),o}function g0(a){let o=(a||"").trim();return o?(o=o.replace(/^\.\//,"/").replace(/^\/*/,"/"),o=o.replace(/\.html$/i,"").replace(/\/+$/,""),o===""?"/":{"/index":"/","/omarchy-usage":"/omarchy-usage"}[o]??o):null}function b0({page:a,onMessage:o,frameRef:l}){const s=_.useRef(null),u=_.useMemo(()=>rw(a),[a]),d=_.useRef(o);d.current=o;const p=h=>{s.current=h,l&&(l.current=h)};return _.useEffect(()=>{function h(f){const g=f.data;!g||typeof g!="object"||(g.type==="ds4cc:ready"||g.type==="ds4cc:rinnegan-request"||g.type==="ds4cc:navigate")&&d.current(g)}return window.addEventListener("message",h),()=>window.removeEventListener("message",h)},[]),K.jsx("iframe",{"code-path":"src/components/SiteFrame.tsx:45:5",ref:p,title:`ds4cc — ${a}`,srcDoc:u,style:{border:0,display:"block",width:"100%",height:"100vh",background:"#07060b"}})}const ow="/login";function Vu(a){const{redirectOnUnauthenticated:o=!1,redirectPath:l=ow}={},s=Sr(),u=_n.useUtils(),{data:d,isLoading:p,error:h,refetch:f}=_n.auth.me.useQuery(void 0,{staleTime:1e3*60*5,retry:!1}),g=_n.auth.logout.useMutation({onSuccess:async()=>{await u.invalidate(),s(l)}}),v=_.useCallback(()=>g.mutate(),[g]);return _.useEffect(()=>{o&&!p&&!d&&window.location.pathname!==l&&s(l)},[o,p,d,s,l]),_.useMemo(()=>({user:d??null,isAuthenticated:!!d,isLoading:p||g.isPending,error:h,logout:v,refresh:f}),[d,p,g.isPending,h,v,f])}function lw({open:a,onClose:o,onUnlocked:l}){const s=Sr(),{isAuthenticated:u,user:d}=Vu(),[p,h]=_.useState("USD"),f=_n.useUtils(),g=_n.rinnegan.unlock.useMutation({onSuccess:async()=>{await f.rinnegan.status.invalidate(),l(),o()}});return a?K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:31:5",className:"kc-overlay",role:"dialog","aria-modal":"true","aria-label":"Rinnegan access",children:K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:32:7",className:"kc-gate",children:[K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:33:9",className:"kc-gate-head",children:[K.jsx("span",{"code-path":"src/components/RinneganGate.tsx:34:11",className:"kc-gate-eye","aria-hidden":"true"}),K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:35:11",children:[K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:36:13",className:"kc-gate-kicker",children:"rinnegan // omp-only tier"}),K.jsx("h2",{"code-path":"src/components/RinneganGate.tsx:37:13",className:"kc-gate-title",children:"The gate admits one substrate."})]})]}),K.jsxs("p",{"code-path":"src/components/RinneganGate.tsx:41:9",className:"kc-gate-copy",children:["The rinnegan catalog serves ",K.jsx("b",{"code-path":"src/components/RinneganGate.tsx:42:39",children:"omp"})," — the SS+ host CLI. Nothing else makes the cut; the other substrates have their place in normal mode. Access costs exactly ",K.jsx("b",{"code-path":"src/components/RinneganGate.tsx:44:38",children:"1 unit of any currency you choose"}),", on your honor. No processor, no middleman: pay it by whatever means you have, the pledge is the receipt."]}),u?K.jsxs("form",{"code-path":"src/components/RinneganGate.tsx:66:11",className:"kc-gate-actions",onSubmit:v=>{v.preventDefault(),g.mutate({currency:p})},children:[K.jsxs("label",{"code-path":"src/components/RinneganGate.tsx:73:13",className:"kc-field",children:[K.jsx("span",{"code-path":"src/components/RinneganGate.tsx:74:15",children:"currency — any, yours to name"}),K.jsx("input",{"code-path":"src/components/RinneganGate.tsx:75:15",value:p,onChange:v=>h(v.target.value),maxLength:16,placeholder:"USD",autoFocus:!0})]}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:83:13",type:"submit",className:"kc-btn solid",disabled:g.isPending||!p.trim(),children:g.isPending?"pledging…":`Pledge 1 ${p.trim().toUpperCase()||"—"} & unlock`}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:92:13",type:"button",className:"kc-btn",onClick:o,children:"not yet"}),g.error&&K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:96:15",className:"kc-gate-err",children:g.error.message||"pledge failed — try again"}),K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:100:13",className:"kc-gate-note",children:["signed in as ",d?.name??"operator"," — the toggle stays per-visit after this, never persisted"]})]}):K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:50:11",className:"kc-gate-actions",children:[K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:51:13",type:"button",className:"kc-btn solid",onClick:()=>{o(),s("/login")},children:"Sign in with Kimi to pledge"}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:61:13",type:"button",className:"kc-btn",onClick:o,children:"stay in normal mode"})]})]})}):null}function v0(){const a=Sr(),{user:o,isAuthenticated:l,isLoading:s,logout:u}=Vu(),d=_n.rinnegan.status.useQuery(void 0,{enabled:l});return K.jsx("div",{"code-path":"src/components/AccountBar.tsx:15:5",className:"kc-bar",children:s?null:l?K.jsxs(K.Fragment,{children:[K.jsxs("span",{"code-path":"src/components/AccountBar.tsx:26:11",className:"kc-chip kc-chip-id",children:[o?.name??"operator",K.jsx("i",{"code-path":"src/components/AccountBar.tsx:28:13",className:d.data?.unlocked?"kc-dot kc-dot-on":"kc-dot",title:d.data?.unlocked?"rinnegan pledged":"normal mode"})]}),K.jsx("button",{"code-path":"src/components/AccountBar.tsx:35:11",type:"button",className:"kc-chip",onClick:()=>{u()},children:"sign out"})]}):K.jsx("button",{"code-path":"src/components/AccountBar.tsx:17:9",type:"button",className:"kc-chip",onClick:()=>a("/login"),children:"sign in"})})}function iw(){const a=Sr(),{isAuthenticated:o,isLoading:l}=Vu(),u=!!_n.rinnegan.status.useQuery(void 0,{enabled:o}).data?.unlocked,[d,p]=_.useState(!1),h=_.useRef(null),f=_.useCallback(v=>{h.current?.contentWindow?.postMessage({type:"ds4cc:rinnegan-set",on:v},"*")},[]),g=_.useCallback(v=>{if(v.type==="ds4cc:navigate"){const y=g0(v.path);y&&a(y);return}if(v.type==="ds4cc:rinnegan-request"){if(l)return;if(!o||!u){p(!0);return}f(!v.current)}},[l,o,u,f,a]);return K.jsxs("div",{"code-path":"src/pages/Home.tsx:49:5",className:"kc-host",children:[K.jsx(b0,{"code-path":"src/pages/Home.tsx:50:7",page:"main",onMessage:g,frameRef:h}),K.jsx(v0,{"code-path":"src/pages/Home.tsx:51:7"}),K.jsx(lw,{"code-path":"src/pages/Home.tsx:52:7",open:d,onClose:()=>p(!1),onUnlocked:()=>f(!0)})]})}function hr({page:a}){const o=Sr(),l=_.useCallback(s=>{if(s.type==="ds4cc:navigate"){const u=g0(s.path);u&&o(u)}},[o]);return K.jsxs("div",{"code-path":"src/pages/SubPage.tsx:21:5",className:"kc-host",children:[K.jsx(b0,{"code-path":"src/pages/SubPage.tsx:22:7",page:a,onMessage:l}),K.jsx(v0,{"code-path":"src/pages/SubPage.tsx:23:7"})]})}function y0(a){var o,l,s="";if(typeof a=="string"||typeof a=="number")s+=a;else if(typeof a=="object")if(Array.isArray(a)){var u=a.length;for(o=0;o<u;o++)a[o]&&(l=y0(a[o]))&&(s&&(s+=" "),s+=l)}else for(l in a)a[l]&&(s&&(s+=" "),s+=l);return s}function x0(){for(var a,o,l=0,s="",u=arguments.length;l<u;l++)(a=arguments[l])&&(o=y0(a))&&(s&&(s+=" "),s+=o);return s}const sw=(a,o)=>{const l=new Array(a.length+o.length);for(let s=0;s<a.length;s++)l[s]=a[s];for(let s=0;s<o.length;s++)l[a.length+s]=o[s];return l},cw=(a,o)=>({classGroupId:a,validator:o}),k0=(a=new Map,o=null,l)=>({nextPart:a,validators:o,classGroupId:l}),yi="-",Uh=[],uw="arbitrary..",dw=a=>{const o=fw(a),{conflictingClassGroups:l,conflictingClassGroupModifiers:s}=a;return{getClassGroupId:p=>{if(p.startsWith("[")&&p.endsWith("]"))return pw(p);const h=p.split(yi),f=h[0]===""&&h.length>1?1:0;return w0(h,f,o)},getConflictingClassGroupIds:(p,h)=>{if(h){const f=s[p],g=l[p];return f?g?sw(g,f):f:g||Uh}return l[p]||Uh}}},w0=(a,o,l)=>{if(a.length-o===0)return l.classGroupId;const u=a[o],d=l.nextPart.get(u);if(d){const g=w0(a,o+1,d);if(g)return g}const p=l.validators;if(p===null)return;const h=o===0?a.join(yi):a.slice(o).join(yi),f=p.length;for(let g=0;g<f;g++){const v=p[g];if(v.validator(h))return v.classGroupId}},pw=a=>a.slice(1,-1).indexOf(":")===-1?void 0:(()=>{const o=a.slice(1,-1),l=o.indexOf(":"),s=o.slice(0,l);return s?uw+s:void 0})(),fw=a=>{const{theme:o,classGroups:l}=a;return mw(l,o)},mw=(a,o)=>{const l=k0();for(const s in a){const u=a[s];Yu(u,l,s,o)}return l},Yu=(a,o,l,s)=>{const u=a.length;for(let d=0;d<u;d++){const p=a[d];hw(p,o,l,s)}},hw=(a,o,l,s)=>{if(typeof a=="string"){gw(a,o,l);return}if(typeof a=="function"){bw(a,o,l,s);return}vw(a,o,l,s)},gw=(a,o,l)=>{const s=a===""?o:_0(o,a);s.classGroupId=l},bw=(a,o,l,s)=>{if(yw(a)){Yu(a(s),o,l,s);return}o.validators===null&&(o.validators=[]),o.validators.push(cw(l,a))},vw=(a,o,l,s)=>{const u=Object.entries(a),d=u.length;for(let p=0;p<d;p++){const[h,f]=u[p];Yu(f,_0(o,h),l,s)}},_0=(a,o)=>{let l=a;const s=o.split(yi),u=s.length;for(let d=0;d<u;d++){const p=s[d];let h=l.nextPart.get(p);h||(h=k0(),l.nextPart.set(p,h)),l=h}return l},yw=a=>"isThemeGetter"in a&&a.isThemeGetter===!0,xw=a=>{if(a<1)return{get:()=>{},set:()=>{}};let o=0,l=Object.create(null),s=Object.create(null);const u=(d,p)=>{l[d]=p,o++,o>a&&(o=0,s=l,l=Object.create(null))};return{get(d){let p=l[d];if(p!==void 0)return p;if((p=s[d])!==void 0)return u(d,p),p},set(d,p){d in l?l[d]=p:u(d,p)}}},Cu="!",Bh=":",kw=[],Ph=(a,o,l,s,u)=>({modifiers:a,hasImportantModifier:o,baseClassName:l,maybePostfixModifierPosition:s,isExternal:u}),ww=a=>{const{prefix:o,experimentalParseClassName:l}=a;let s=u=>{const d=[];let p=0,h=0,f=0,g;const v=u.length;for(let A=0;A<v;A++){const L=u[A];if(p===0&&h===0){if(L===Bh){d.push(u.slice(f,A)),f=A+1;continue}if(L==="/"){g=A;continue}}L==="["?p++:L==="]"?p--:L==="("?h++:L===")"&&h--}const y=d.length===0?u:u.slice(f);let C=y,D=!1;y.endsWith(Cu)?(C=y.slice(0,-1),D=!0):y.startsWith(Cu)&&(C=y.slice(1),D=!0);const N=g&&g>f?g-f:void 0;return Ph(d,D,C,N)};if(o){const u=o+Bh,d=s;s=p=>p.startsWith(u)?d(p.slice(u.length)):Ph(kw,!1,p,void 0,!0)}if(l){const u=s;s=d=>l({className:d,parseClassName:u})}return s},_w=a=>{const o=new Map;return a.orderSensitiveModifiers.forEach((l,s)=>{o.set(l,1e6+s)}),l=>{const s=[];let u=[];for(let d=0;d<l.length;d++){const p=l[d],h=p[0]==="[",f=o.has(p);h||f?(u.length>0&&(u.sort(),s.push(...u),u=[]),s.push(p)):u.push(p)}return u.length>0&&(u.sort(),s.push(...u)),s}},Sw=a=>({cache:xw(a.cacheSize),parseClassName:ww(a),sortModifiers:_w(a),...dw(a)}),Cw=/\s+/,Tw=(a,o)=>{const{parseClassName:l,getClassGroupId:s,getConflictingClassGroupIds:u,sortModifiers:d}=o,p=[],h=a.trim().split(Cw);let f="";for(let g=h.length-1;g>=0;g-=1){const v=h[g],{isExternal:y,modifiers:C,hasImportantModifier:D,baseClassName:N,maybePostfixModifierPosition:A}=l(v);if(y){f=v+(f.length>0?" "+f:f);continue}let L=!!A,Y=s(L?N.substring(0,A):N);if(!Y){if(!L){f=v+(f.length>0?" "+f:f);continue}if(Y=s(N),!Y){f=v+(f.length>0?" "+f:f);continue}L=!1}const I=C.length===0?"":C.length===1?C[0]:d(C).join(":"),F=D?I+Cu:I,pe=F+Y;if(p.indexOf(pe)>-1)continue;p.push(pe);const Z=u(Y,L);for(let V=0;V<Z.length;++V){const z=Z[V];p.push(F+z)}f=v+(f.length>0?" "+f:f)}return f},Ow=(...a)=>{let o=0,l,s,u="";for(;o<a.length;)(l=a[o++])&&(s=S0(l))&&(u&&(u+=" "),u+=s);return u},S0=a=>{if(typeof a=="string")return a;let o,l="";for(let s=0;s<a.length;s++)a[s]&&(o=S0(a[s]))&&(l&&(l+=" "),l+=o);return l},Ew=(a,...o)=>{let l,s,u,d;const p=f=>{const g=o.reduce((v,y)=>y(v),a());return l=Sw(g),s=l.cache.get,u=l.cache.set,d=h,h(f)},h=f=>{const g=s(f);if(g)return g;const v=Tw(f,l);return u(f,v),v};return d=p,(...f)=>d(Ow(...f))},Aw=[],et=a=>{const o=l=>l[a]||Aw;return o.isThemeGetter=!0,o},C0=/^\[(?:(\w[\w-]*):)?(.+)\]$/i,T0=/^\((?:(\w[\w-]*):)?(.+)\)$/i,Mw=/^\d+\/\d+$/,Lw=/^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/,Rw=/\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/,Dw=/^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix)\(.+\)$/,zw=/^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/,jw=/^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/,gr=a=>Mw.test(a),xe=a=>!!a&&!Number.isNaN(Number(a)),ea=a=>!!a&&Number.isInteger(Number(a)),cu=a=>a.endsWith("%")&&xe(a.slice(0,-1)),wn=a=>Lw.test(a),Nw=()=>!0,Hw=a=>Rw.test(a)&&!Dw.test(a),O0=()=>!1,Uw=a=>zw.test(a),Bw=a=>jw.test(a),Pw=a=>!ne(a)&&!ae(a),qw=a=>Cr(a,M0,O0),ne=a=>C0.test(a),Sa=a=>Cr(a,L0,Hw),uu=a=>Cr(a,Vw,xe),qh=a=>Cr(a,E0,O0),Gw=a=>Cr(a,A0,Bw),ci=a=>Cr(a,R0,Uw),ae=a=>T0.test(a),Co=a=>Tr(a,L0),$w=a=>Tr(a,Yw),Gh=a=>Tr(a,E0),Qw=a=>Tr(a,M0),Zw=a=>Tr(a,A0),ui=a=>Tr(a,R0,!0),Cr=(a,o,l)=>{const s=C0.exec(a);return s?s[1]?o(s[1]):l(s[2]):!1},Tr=(a,o,l=!1)=>{const s=T0.exec(a);return s?s[1]?o(s[1]):l:!1},E0=a=>a==="position"||a==="percentage",A0=a=>a==="image"||a==="url",M0=a=>a==="length"||a==="size"||a==="bg-size",L0=a=>a==="length",Vw=a=>a==="number",Yw=a=>a==="family-name",R0=a=>a==="shadow",Kw=()=>{const a=et("color"),o=et("font"),l=et("text"),s=et("font-weight"),u=et("tracking"),d=et("leading"),p=et("breakpoint"),h=et("container"),f=et("spacing"),g=et("radius"),v=et("shadow"),y=et("inset-shadow"),C=et("text-shadow"),D=et("drop-shadow"),N=et("blur"),A=et("perspective"),L=et("aspect"),Y=et("ease"),I=et("animate"),F=()=>["auto","avoid","all","avoid-page","page","left","right","column"],pe=()=>["center","top","bottom","left","right","top-left","left-top","top-right","right-top","bottom-right","right-bottom","bottom-left","left-bottom"],Z=()=>[...pe(),ae,ne],V=()=>["auto","hidden","clip","visible","scroll"],z=()=>["auto","contain","none"],G=()=>[ae,ne,f],J=()=>[gr,"full","auto",...G()],oe=()=>[ea,"none","subgrid",ae,ne],le=()=>["auto",{span:["full",ea,ae,ne]},ea,ae,ne],te=()=>[ea,"auto",ae,ne],be=()=>["auto","min","max","fr",ae,ne],fe=()=>["start","end","center","between","around","evenly","stretch","baseline","center-safe","end-safe"],se=()=>["start","end","center","stretch","center-safe","end-safe"],T=()=>["auto",...G()],$=()=>[gr,"auto","full","dvw","dvh","lvw","lvh","svw","svh","min","max","fit",...G()],U=()=>[a,ae,ne],ue=()=>[...pe(),Gh,qh,{position:[ae,ne]}],ye=()=>["no-repeat",{repeat:["","x","y","space","round"]}],k=()=>["auto","cover","contain",Qw,qw,{size:[ae,ne]}],j=()=>[cu,Co,Sa],P=()=>["","none","full",g,ae,ne],Q=()=>["",xe,Co,Sa],W=()=>["solid","dashed","dotted","double"],me=()=>["normal","multiply","screen","overlay","darken","lighten","color-dodge","color-burn","hard-light","soft-light","difference","exclusion","hue","saturation","color","luminosity"],ce=()=>[xe,cu,Gh,qh],tt=()=>["","none",N,ae,ne],He=()=>["none",xe,ae,ne],Yt=()=>["none",xe,ae,ne],On=()=>[xe,ae,ne],En=()=>[gr,"full",...G()];return{cacheSize:500,theme:{animate:["spin","ping","pulse","bounce"],aspect:["video"],blur:[wn],breakpoint:[wn],color:[Nw],container:[wn],"drop-shadow":[wn],ease:["in","out","in-out"],font:[Pw],"font-weight":["thin","extralight","light","normal","medium","semibold","bold","extrabold","black"],"inset-shadow":[wn],leading:["none","tight","snug","normal","relaxed","loose"],perspective:["dramatic","near","normal","midrange","distant","none"],radius:[wn],shadow:[wn],spacing:["px",xe],text:[wn],"text-shadow":[wn],tracking:["tighter","tight","normal","wide","wider","widest"]},classGroups:{aspect:[{aspect:["auto","square",gr,ne,ae,L]}],container:["container"],columns:[{columns:[xe,ne,ae,h]}],"break-after":[{"break-after":F()}],"break-before":[{"break-before":F()}],"break-inside":[{"break-inside":["auto","avoid","avoid-page","avoid-column"]}],"box-decoration":[{"box-decoration":["slice","clone"]}],box:[{box:["border","content"]}],display:["block","inline-block","inline","flex","inline-flex","table","inline-table","table-caption","table-cell","table-column","table-column-group","table-footer-group","table-header-group","table-row-group","table-row","flow-root","grid","inline-grid","contents","list-item","hidden"],sr:["sr-only","not-sr-only"],float:[{float:["right","left","none","start","end"]}],clear:[{clear:["left","right","both","none","start","end"]}],isolation:["isolate","isolation-auto"],"object-fit":[{object:["contain","cover","fill","none","scale-down"]}],"object-position":[{object:Z()}],overflow:[{overflow:V()}],"overflow-x":[{"overflow-x":V()}],"overflow-y":[{"overflow-y":V()}],overscroll:[{overscroll:z()}],"overscroll-x":[{"overscroll-x":z()}],"overscroll-y":[{"overscroll-y":z()}],position:["static","fixed","absolute","relative","sticky"],inset:[{inset:J()}],"inset-x":[{"inset-x":J()}],"inset-y":[{"inset-y":J()}],start:[{start:J()}],end:[{end:J()}],top:[{top:J()}],right:[{right:J()}],bottom:[{bottom:J()}],left:[{left:J()}],visibility:["visible","invisible","collapse"],z:[{z:[ea,"auto",ae,ne]}],basis:[{basis:[gr,"full","auto",h,...G()]}],"flex-direction":[{flex:["row","row-reverse","col","col-reverse"]}],"flex-wrap":[{flex:["nowrap","wrap","wrap-reverse"]}],flex:[{flex:[xe,gr,"auto","initial","none",ne]}],grow:[{grow:["",xe,ae,ne]}],shrink:[{shrink:["",xe,ae,ne]}],order:[{order:[ea,"first","last","none",ae,ne]}],"grid-cols":[{"grid-cols":oe()}],"col-start-end":[{col:le()}],"col-start":[{"col-start":te()}],"col-end":[{"col-end":te()}],"grid-rows":[{"grid-rows":oe()}],"row-start-end":[{row:le()}],"row-start":[{"row-start":te()}],"row-end":[{"row-end":te()}],"grid-flow":[{"grid-flow":["row","col","dense","row-dense","col-dense"]}],"auto-cols":[{"auto-cols":be()}],"auto-rows":[{"auto-rows":be()}],gap:[{gap:G()}],"gap-x":[{"gap-x":G()}],"gap-y":[{"gap-y":G()}],"justify-content":[{justify:[...fe(),"normal"]}],"justify-items":[{"justify-items":[...se(),"normal"]}],"justify-self":[{"justify-self":["auto",...se()]}],"align-content":[{content:["normal",...fe()]}],"align-items":[{items:[...se(),{baseline:["","last"]}]}],"align-self":[{self:["auto",...se(),{baseline:["","last"]}]}],"place-content":[{"place-content":fe()}],"place-items":[{"place-items":[...se(),"baseline"]}],"place-self":[{"place-self":["auto",...se()]}],p:[{p:G()}],px:[{px:G()}],py:[{py:G()}],ps:[{ps:G()}],pe:[{pe:G()}],pt:[{pt:G()}],pr:[{pr:G()}],pb:[{pb:G()}],pl:[{pl:G()}],m:[{m:T()}],mx:[{mx:T()}],my:[{my:T()}],ms:[{ms:T()}],me:[{me:T()}],mt:[{mt:T()}],mr:[{mr:T()}],mb:[{mb:T()}],ml:[{ml:T()}],"space-x":[{"space-x":G()}],"space-x-reverse":["space-x-reverse"],"space-y":[{"space-y":G()}],"space-y-reverse":["space-y-reverse"],size:[{size:$()}],w:[{w:[h,"screen",...$()]}],"min-w":[{"min-w":[h,"screen","none",...$()]}],"max-w":[{"max-w":[h,"screen","none","prose",{screen:[p]},...$()]}],h:[{h:["screen","lh",...$()]}],"min-h":[{"min-h":["screen","lh","none",...$()]}],"max-h":[{"max-h":["screen","lh",...$()]}],"font-size":[{text:["base",l,Co,Sa]}],"font-smoothing":["antialiased","subpixel-antialiased"],"font-style":["italic","not-italic"],"font-weight":[{font:[s,ae,uu]}],"font-stretch":[{"font-stretch":["ultra-condensed","extra-condensed","condensed","semi-condensed","normal","semi-expanded","expanded","extra-expanded","ultra-expanded",cu,ne]}],"font-family":[{font:[$w,ne,o]}],"fvn-normal":["normal-nums"],"fvn-ordinal":["ordinal"],"fvn-slashed-zero":["slashed-zero"],"fvn-figure":["lining-nums","oldstyle-nums"],"fvn-spacing":["proportional-nums","tabular-nums"],"fvn-fraction":["diagonal-fractions","stacked-fractions"],tracking:[{tracking:[u,ae,ne]}],"line-clamp":[{"line-clamp":[xe,"none",ae,uu]}],leading:[{leading:[d,...G()]}],"list-image":[{"list-image":["none",ae,ne]}],"list-style-position":[{list:["inside","outside"]}],"list-style-type":[{list:["disc","decimal","none",ae,ne]}],"text-alignment":[{text:["left","center","right","justify","start","end"]}],"placeholder-color":[{placeholder:U()}],"text-color":[{text:U()}],"text-decoration":["underline","overline","line-through","no-underline"],"text-decoration-style":[{decoration:[...W(),"wavy"]}],"text-decoration-thickness":[{decoration:[xe,"from-font","auto",ae,Sa]}],"text-decoration-color":[{decoration:U()}],"underline-offset":[{"underline-offset":[xe,"auto",ae,ne]}],"text-transform":["uppercase","lowercase","capitalize","normal-case"],"text-overflow":["truncate","text-ellipsis","text-clip"],"text-wrap":[{text:["wrap","nowrap","balance","pretty"]}],indent:[{indent:G()}],"vertical-align":[{align:["baseline","top","middle","bottom","text-top","text-bottom","sub","super",ae,ne]}],whitespace:[{whitespace:["normal","nowrap","pre","pre-line","pre-wrap","break-spaces"]}],break:[{break:["normal","words","all","keep"]}],wrap:[{wrap:["break-word","anywhere","normal"]}],hyphens:[{hyphens:["none","manual","auto"]}],content:[{content:["none",ae,ne]}],"bg-attachment":[{bg:["fixed","local","scroll"]}],"bg-clip":[{"bg-clip":["border","padding","content","text"]}],"bg-origin":[{"bg-origin":["border","padding","content"]}],"bg-position":[{bg:ue()}],"bg-repeat":[{bg:ye()}],"bg-size":[{bg:k()}],"bg-image":[{bg:["none",{linear:[{to:["t","tr","r","br","b","bl","l","tl"]},ea,ae,ne],radial:["",ae,ne],conic:[ea,ae,ne]},Zw,Gw]}],"bg-color":[{bg:U()}],"gradient-from-pos":[{from:j()}],"gradient-via-pos":[{via:j()}],"gradient-to-pos":[{to:j()}],"gradient-from":[{from:U()}],"gradient-via":[{via:U()}],"gradient-to":[{to:U()}],rounded:[{rounded:P()}],"rounded-s":[{"rounded-s":P()}],"rounded-e":[{"rounded-e":P()}],"rounded-t":[{"rounded-t":P()}],"rounded-r":[{"rounded-r":P()}],"rounded-b":[{"rounded-b":P()}],"rounded-l":[{"rounded-l":P()}],"rounded-ss":[{"rounded-ss":P()}],"rounded-se":[{"rounded-se":P()}],"rounded-ee":[{"rounded-ee":P()}],"rounded-es":[{"rounded-es":P()}],"rounded-tl":[{"rounded-tl":P()}],"rounded-tr":[{"rounded-tr":P()}],"rounded-br":[{"rounded-br":P()}],"rounded-bl":[{"rounded-bl":P()}],"border-w":[{border:Q()}],"border-w-x":[{"border-x":Q()}],"border-w-y":[{"border-y":Q()}],"border-w-s":[{"border-s":Q()}],"border-w-e":[{"border-e":Q()}],"border-w-t":[{"border-t":Q()}],"border-w-r":[{"border-r":Q()}],"border-w-b":[{"border-b":Q()}],"border-w-l":[{"border-l":Q()}],"divide-x":[{"divide-x":Q()}],"divide-x-reverse":["divide-x-reverse"],"divide-y":[{"divide-y":Q()}],"divide-y-reverse":["divide-y-reverse"],"border-style":[{border:[...W(),"hidden","none"]}],"divide-style":[{divide:[...W(),"hidden","none"]}],"border-color":[{border:U()}],"border-color-x":[{"border-x":U()}],"border-color-y":[{"border-y":U()}],"border-color-s":[{"border-s":U()}],"border-color-e":[{"border-e":U()}],"border-color-t":[{"border-t":U()}],"border-color-r":[{"border-r":U()}],"border-color-b":[{"border-b":U()}],"border-color-l":[{"border-l":U()}],"divide-color":[{divide:U()}],"outline-style":[{outline:[...W(),"none","hidden"]}],"outline-offset":[{"outline-offset":[xe,ae,ne]}],"outline-w":[{outline:["",xe,Co,Sa]}],"outline-color":[{outline:U()}],shadow:[{shadow:["","none",v,ui,ci]}],"shadow-color":[{shadow:U()}],"inset-shadow":[{"inset-shadow":["none",y,ui,ci]}],"inset-shadow-color":[{"inset-shadow":U()}],"ring-w":[{ring:Q()}],"ring-w-inset":["ring-inset"],"ring-color":[{ring:U()}],"ring-offset-w":[{"ring-offset":[xe,Sa]}],"ring-offset-color":[{"ring-offset":U()}],"inset-ring-w":[{"inset-ring":Q()}],"inset-ring-color":[{"inset-ring":U()}],"text-shadow":[{"text-shadow":["none",C,ui,ci]}],"text-shadow-color":[{"text-shadow":U()}],opacity:[{opacity:[xe,ae,ne]}],"mix-blend":[{"mix-blend":[...me(),"plus-darker","plus-lighter"]}],"bg-blend":[{"bg-blend":me()}],"mask-clip":[{"mask-clip":["border","padding","content","fill","stroke","view"]},"mask-no-clip"],"mask-composite":[{mask:["add","subtract","intersect","exclude"]}],"mask-image-linear-pos":[{"mask-linear":[xe]}],"mask-image-linear-from-pos":[{"mask-linear-from":ce()}],"mask-image-linear-to-pos":[{"mask-linear-to":ce()}],"mask-image-linear-from-color":[{"mask-linear-from":U()}],"mask-image-linear-to-color":[{"mask-linear-to":U()}],"mask-image-t-from-pos":[{"mask-t-from":ce()}],"mask-image-t-to-pos":[{"mask-t-to":ce()}],"mask-image-t-from-color":[{"mask-t-from":U()}],"mask-image-t-to-color":[{"mask-t-to":U()}],"mask-image-r-from-pos":[{"mask-r-from":ce()}],"mask-image-r-to-pos":[{"mask-r-to":ce()}],"mask-image-r-from-color":[{"mask-r-from":U()}],"mask-image-r-to-color":[{"mask-r-to":U()}],"mask-image-b-from-pos":[{"mask-b-from":ce()}],"mask-image-b-to-pos":[{"mask-b-to":ce()}],"mask-image-b-from-color":[{"mask-b-from":U()}],"mask-image-b-to-color":[{"mask-b-to":U()}],"mask-image-l-from-pos":[{"mask-l-from":ce()}],"mask-image-l-to-pos":[{"mask-l-to":ce()}],"mask-image-l-from-color":[{"mask-l-from":U()}],"mask-image-l-to-color":[{"mask-l-to":U()}],"mask-image-x-from-pos":[{"mask-x-from":ce()}],"mask-image-x-to-pos":[{"mask-x-to":ce()}],"mask-image-x-from-color":[{"mask-x-from":U()}],"mask-image-x-to-color":[{"mask-x-to":U()}],"mask-image-y-from-pos":[{"mask-y-from":ce()}],"mask-image-y-to-pos":[{"mask-y-to":ce()}],"mask-image-y-from-color":[{"mask-y-from":U()}],"mask-image-y-to-color":[{"mask-y-to":U()}],"mask-image-radial":[{"mask-radial":[ae,ne]}],"mask-image-radial-from-pos":[{"mask-radial-from":ce()}],"mask-image-radial-to-pos":[{"mask-radial-to":ce()}],"mask-image-radial-from-color":[{"mask-radial-from":U()}],"mask-image-radial-to-color":[{"mask-radial-to":U()}],"mask-image-radial-shape":[{"mask-radial":["circle","ellipse"]}],"mask-image-radial-size":[{"mask-radial":[{closest:["side","corner"],farthest:["side","corner"]}]}],"mask-image-radial-pos":[{"mask-radial-at":pe()}],"mask-image-conic-pos":[{"mask-conic":[xe]}],"mask-image-conic-from-pos":[{"mask-conic-from":ce()}],"mask-image-conic-to-pos":[{"mask-conic-to":ce()}],"mask-image-conic-from-color":[{"mask-conic-from":U()}],"mask-image-conic-to-color":[{"mask-conic-to":U()}],"mask-mode":[{mask:["alpha","luminance","match"]}],"mask-origin":[{"mask-origin":["border","padding","content","fill","stroke","view"]}],"mask-position":[{mask:ue()}],"mask-repeat":[{mask:ye()}],"mask-size":[{mask:k()}],"mask-type":[{"mask-type":["alpha","luminance"]}],"mask-image":[{mask:["none",ae,ne]}],filter:[{filter:["","none",ae,ne]}],blur:[{blur:tt()}],brightness:[{brightness:[xe,ae,ne]}],contrast:[{contrast:[xe,ae,ne]}],"drop-shadow":[{"drop-shadow":["","none",D,ui,ci]}],"drop-shadow-color":[{"drop-shadow":U()}],grayscale:[{grayscale:["",xe,ae,ne]}],"hue-rotate":[{"hue-rotate":[xe,ae,ne]}],invert:[{invert:["",xe,ae,ne]}],saturate:[{saturate:[xe,ae,ne]}],sepia:[{sepia:["",xe,ae,ne]}],"backdrop-filter":[{"backdrop-filter":["","none",ae,ne]}],"backdrop-blur":[{"backdrop-blur":tt()}],"backdrop-brightness":[{"backdrop-brightness":[xe,ae,ne]}],"backdrop-contrast":[{"backdrop-contrast":[xe,ae,ne]}],"backdrop-grayscale":[{"backdrop-grayscale":["",xe,ae,ne]}],"backdrop-hue-rotate":[{"backdrop-hue-rotate":[xe,ae,ne]}],"backdrop-invert":[{"backdrop-invert":["",xe,ae,ne]}],"backdrop-opacity":[{"backdrop-opacity":[xe,ae,ne]}],"backdrop-saturate":[{"backdrop-saturate":[xe,ae,ne]}],"backdrop-sepia":[{"backdrop-sepia":["",xe,ae,ne]}],"border-collapse":[{border:["collapse","separate"]}],"border-spacing":[{"border-spacing":G()}],"border-spacing-x":[{"border-spacing-x":G()}],"border-spacing-y":[{"border-spacing-y":G()}],"table-layout":[{table:["auto","fixed"]}],caption:[{caption:["top","bottom"]}],transition:[{transition:["","all","colors","opacity","shadow","transform","none",ae,ne]}],"transition-behavior":[{transition:["normal","discrete"]}],duration:[{duration:[xe,"initial",ae,ne]}],ease:[{ease:["linear","initial",Y,ae,ne]}],delay:[{delay:[xe,ae,ne]}],animate:[{animate:["none",I,ae,ne]}],backface:[{backface:["hidden","visible"]}],perspective:[{perspective:[A,ae,ne]}],"perspective-origin":[{"perspective-origin":Z()}],rotate:[{rotate:He()}],"rotate-x":[{"rotate-x":He()}],"rotate-y":[{"rotate-y":He()}],"rotate-z":[{"rotate-z":He()}],scale:[{scale:Yt()}],"scale-x":[{"scale-x":Yt()}],"scale-y":[{"scale-y":Yt()}],"scale-z":[{"scale-z":Yt()}],"scale-3d":["scale-3d"],skew:[{skew:On()}],"skew-x":[{"skew-x":On()}],"skew-y":[{"skew-y":On()}],transform:[{transform:[ae,ne,"","none","gpu","cpu"]}],"transform-origin":[{origin:Z()}],"transform-style":[{transform:["3d","flat"]}],translate:[{translate:En()}],"translate-x":[{"translate-x":En()}],"translate-y":[{"translate-y":En()}],"translate-z":[{"translate-z":En()}],"translate-none":["translate-none"],accent:[{accent:U()}],appearance:[{appearance:["none","auto"]}],"caret-color":[{caret:U()}],"color-scheme":[{scheme:["normal","dark","light","light-dark","only-dark","only-light"]}],cursor:[{cursor:["auto","default","pointer","wait","text","move","help","not-allowed","none","context-menu","progress","cell","crosshair","vertical-text","alias","copy","no-drop","grab","grabbing","all-scroll","col-resize","row-resize","n-resize","e-resize","s-resize","w-resize","ne-resize","nw-resize","se-resize","sw-resize","ew-resize","ns-resize","nesw-resize","nwse-resize","zoom-in","zoom-out",ae,ne]}],"field-sizing":[{"field-sizing":["fixed","content"]}],"pointer-events":[{"pointer-events":["auto","none"]}],resize:[{resize:["none","","y","x"]}],"scroll-behavior":[{scroll:["auto","smooth"]}],"scroll-m":[{"scroll-m":G()}],"scroll-mx":[{"scroll-mx":G()}],"scroll-my":[{"scroll-my":G()}],"scroll-ms":[{"scroll-ms":G()}],"scroll-me":[{"scroll-me":G()}],"scroll-mt":[{"scroll-mt":G()}],"scroll-mr":[{"scroll-mr":G()}],"scroll-mb":[{"scroll-mb":G()}],"scroll-ml":[{"scroll-ml":G()}],"scroll-p":[{"scroll-p":G()}],"scroll-px":[{"scroll-px":G()}],"scroll-py":[{"scroll-py":G()}],"scroll-ps":[{"scroll-ps":G()}],"scroll-pe":[{"scroll-pe":G()}],"scroll-pt":[{"scroll-pt":G()}],"scroll-pr":[{"scroll-pr":G()}],"scroll-pb":[{"scroll-pb":G()}],"scroll-pl":[{"scroll-pl":G()}],"snap-align":[{snap:["start","end","center","align-none"]}],"snap-stop":[{snap:["normal","always"]}],"snap-type":[{snap:["none","x","y","both"]}],"snap-strictness":[{snap:["mandatory","proximity"]}],touch:[{touch:["auto","none","manipulation"]}],"touch-x":[{"touch-pan":["x","left","right"]}],"touch-y":[{"touch-pan":["y","up","down"]}],"touch-pz":["touch-pinch-zoom"],select:[{select:["none","text","all","auto"]}],"will-change":[{"will-change":["auto","scroll","contents","transform",ae,ne]}],fill:[{fill:["none",...U()]}],"stroke-w":[{stroke:[xe,Co,Sa,uu]}],stroke:[{stroke:["none",...U()]}],"forced-color-adjust":[{"forced-color-adjust":["auto","none"]}]},conflictingClassGroups:{overflow:["overflow-x","overflow-y"],overscroll:["overscroll-x","overscroll-y"],inset:["inset-x","inset-y","start","end","top","right","bottom","left"],"inset-x":["right","left"],"inset-y":["top","bottom"],flex:["basis","grow","shrink"],gap:["gap-x","gap-y"],p:["px","py","ps","pe","pt","pr","pb","pl"],px:["pr","pl"],py:["pt","pb"],m:["mx","my","ms","me","mt","mr","mb","ml"],mx:["mr","ml"],my:["mt","mb"],size:["w","h"],"font-size":["leading"],"fvn-normal":["fvn-ordinal","fvn-slashed-zero","fvn-figure","fvn-spacing","fvn-fraction"],"fvn-ordinal":["fvn-normal"],"fvn-slashed-zero":["fvn-normal"],"fvn-figure":["fvn-normal"],"fvn-spacing":["fvn-normal"],"fvn-fraction":["fvn-normal"],"line-clamp":["display","overflow"],rounded:["rounded-s","rounded-e","rounded-t","rounded-r","rounded-b","rounded-l","rounded-ss","rounded-se","rounded-ee","rounded-es","rounded-tl","rounded-tr","rounded-br","rounded-bl"],"rounded-s":["rounded-ss","rounded-es"],"rounded-e":["rounded-se","rounded-ee"],"rounded-t":["rounded-tl","rounded-tr"],"rounded-r":["rounded-tr","rounded-br"],"rounded-b":["rounded-br","rounded-bl"],"rounded-l":["rounded-tl","rounded-bl"],"border-spacing":["border-spacing-x","border-spacing-y"],"border-w":["border-w-x","border-w-y","border-w-s","border-w-e","border-w-t","border-w-r","border-w-b","border-w-l"],"border-w-x":["border-w-r","border-w-l"],"border-w-y":["border-w-t","border-w-b"],"border-color":["border-color-x","border-color-y","border-color-s","border-color-e","border-color-t","border-color-r","border-color-b","border-color-l"],"border-color-x":["border-color-r","border-color-l"],"border-color-y":["border-color-t","border-color-b"],translate:["translate-x","translate-y","translate-none"],"translate-none":["translate","translate-x","translate-y","translate-z"],"scroll-m":["scroll-mx","scroll-my","scroll-ms","scroll-me","scroll-mt","scroll-mr","scroll-mb","scroll-ml"],"scroll-mx":["scroll-mr","scroll-ml"],"scroll-my":["scroll-mt","scroll-mb"],"scroll-p":["scroll-px","scroll-py","scroll-ps","scroll-pe","scroll-pt","scroll-pr","scroll-pb","scroll-pl"],"scroll-px":["scroll-pr","scroll-pl"],"scroll-py":["scroll-pt","scroll-pb"],touch:["touch-x","touch-y","touch-pz"],"touch-x":["touch"],"touch-y":["touch"],"touch-pz":["touch"]},conflictingClassGroupModifiers:{"font-size":["leading"]},orderSensitiveModifiers:["*","**","after","backdrop","before","details-content","file","first-letter","first-line","marker","placeholder","selection"]}},Iw=Ew(Kw);function Po(...a){return Iw(x0(a))}function D0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:7:5","data-slot":"card",className:Po("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",a),...o})}function z0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:20:5","data-slot":"card-header",className:Po("@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",a),...o})}function j0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:33:5","data-slot":"card-title",className:Po("leading-none font-semibold",a),...o})}function N0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:66:5","data-slot":"card-content",className:Po("px-6",a),...o})}function $h(a,o){if(typeof a=="function")return a(o);a!=null&&(a.current=o)}function Xw(...a){return o=>{let l=!1;const s=a.map(u=>{const d=$h(u,o);return!l&&typeof d=="function"&&(l=!0),d});if(l)return()=>{for(let u=0;u<s.length;u++){const d=s[u];typeof d=="function"?d():$h(a[u],null)}}}}var Fw=Symbol.for("react.lazy"),xi=Vh[" use ".trim().toString()];function Jw(a){return typeof a=="object"&&a!==null&&"then"in a}function H0(a){return a!=null&&typeof a=="object"&&"$$typeof"in a&&a.$$typeof===Fw&&"_payload"in a&&Jw(a._payload)}function Ww(a){const o=t_(a),l=_.forwardRef((s,u)=>{let{children:d,...p}=s;H0(d)&&typeof xi=="function"&&(d=xi(d._payload));const h=_.Children.toArray(d),f=h.find(a_);if(f){const g=f.props.children,v=h.map(y=>y===f?_.Children.count(g)>1?_.Children.only(null):_.isValidElement(g)?g.props.children:null:y);return K.jsx(o,{...p,ref:u,children:_.isValidElement(g)?_.cloneElement(g,void 0,v):null})}return K.jsx(o,{...p,ref:u,children:d})});return l.displayName=`${a}.Slot`,l}var e_=Ww("Slot");function t_(a){const o=_.forwardRef((l,s)=>{let{children:u,...d}=l;if(H0(u)&&typeof xi=="function"&&(u=xi(u._payload)),_.isValidElement(u)){const p=o_(u),h=r_(d,u.props);return u.type!==_.Fragment&&(h.ref=s?Xw(s,p):p),_.cloneElement(u,h)}return _.Children.count(u)>1?_.Children.only(null):null});return o.displayName=`${a}.SlotClone`,o}var n_=Symbol("radix.slottable");function a_(a){return _.isValidElement(a)&&typeof a.type=="function"&&"__radixId"in a.type&&a.type.__radixId===n_}function r_(a,o){const l={...o};for(const s in o){const u=a[s],d=o[s];/^on[A-Z]/.test(s)?u&&d?l[s]=(...h)=>{const f=d(...h);return u(...h),f}:u&&(l[s]=u):s==="style"?l[s]={...u,...d}:s==="className"&&(l[s]=[u,d].filter(Boolean).join(" "))}return{...a,...l}}function o_(a){let o=Object.getOwnPropertyDescriptor(a.props,"ref")?.get,l=o&&"isReactWarning"in o&&o.isReactWarning;return l?a.ref:(o=Object.getOwnPropertyDescriptor(a,"ref")?.get,l=o&&"isReactWarning"in o&&o.isReactWarning,l?a.props.ref:a.props.ref||a.ref)}const Qh=a=>typeof a=="boolean"?`${a}`:a===0?"0":a,Zh=x0,l_=(a,o)=>l=>{var s;if(o?.variants==null)return Zh(a,l?.class,l?.className);const{variants:u,defaultVariants:d}=o,p=Object.keys(u).map(g=>{const v=l?.[g],y=d?.[g];if(v===null)return null;const C=Qh(v)||Qh(y);return u[g][C]}),h=l&&Object.entries(l).reduce((g,v)=>{let[y,C]=v;return C===void 0||(g[y]=C),g},{}),f=o==null||(s=o.compoundVariants)===null||s===void 0?void 0:s.reduce((g,v)=>{let{class:y,className:C,...D}=v;return Object.entries(D).every(N=>{let[A,L]=N;return Array.isArray(L)?L.includes({...d,...h}[A]):{...d,...h}[A]===L})?[...g,y,C]:g},[]);return Zh(a,p,f,l?.class,l?.className)},i_=l_("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",{variants:{variant:{default:"bg-primary text-primary-foreground hover:bg-primary/90",destructive:"bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",outline:"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",secondary:"bg-secondary text-secondary-foreground hover:bg-secondary/80",ghost:"hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",link:"text-primary underline-offset-4 hover:underline"},size:{default:"h-9 px-4 py-2 has-[>svg]:px-3",sm:"h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",lg:"h-10 rounded-md px-6 has-[>svg]:px-4",icon:"size-9","icon-sm":"size-8","icon-lg":"size-10"}},defaultVariants:{variant:"default",size:"default"}});function U0({className:a,variant:o="default",size:l="default",asChild:s=!1,...u}){const d=s?e_:"button";return K.jsx(d,{"code-path":"src/components/ui/button.tsx:52:5","data-slot":"button","data-variant":o,"data-size":l,className:Po(i_({variant:o,size:l,className:a})),...u})}function s_(){const a="https://auth.kimi.com",o="1a0acf59-c082-8794-8000-0000a7b1e0e1",l=`${window.location.origin}/api/oauth/callback`,s=btoa(l),u=new URL(`${a}/api/oauth/authorize`);return u.searchParams.set("client_id",o),u.searchParams.set("redirect_uri",l),u.searchParams.set("response_type","code"),u.searchParams.set("scope","profile"),u.searchParams.set("state",s),u.toString()}function c_(){return K.jsx("div",{"code-path":"src/pages/Login.tsx:22:5",className:"min-h-screen flex items-center justify-center",children:K.jsxs(D0,{"code-path":"src/pages/Login.tsx:23:7",className:"w-full max-w-sm",children:[K.jsx(z0,{"code-path":"src/pages/Login.tsx:24:9",className:"text-center",children:K.jsx(j0,{"code-path":"src/pages/Login.tsx:25:11",children:"Welcome"})}),K.jsx(N0,{"code-path":"src/pages/Login.tsx:27:9",children:K.jsx(U0,{"code-path":"src/pages/Login.tsx:28:11",className:"w-full",size:"lg",onClick:()=>{window.location.href=s_()},children:"Sign in with Kimi"})})]})})}function u_(){return K.jsx("div",{"code-path":"src/pages/NotFound.tsx:7:5",className:"min-h-screen flex items-center justify-center",children:K.jsxs(D0,{"code-path":"src/pages/NotFound.tsx:8:7",className:"w-full max-w-sm text-center",children:[K.jsx(z0,{"code-path":"src/pages/NotFound.tsx:9:9",children:K.jsx(j0,{"code-path":"src/pages/NotFound.tsx:10:11",className:"text-4xl font-bold",children:"404"})}),K.jsxs(N0,{"code-path":"src/pages/NotFound.tsx:12:9",className:"space-y-4",children:[K.jsx("p",{"code-path":"src/pages/NotFound.tsx:13:11",className:"text-muted-foreground",children:"Page not found"}),K.jsx(U0,{"code-path":"src/pages/NotFound.tsx:14:11",asChild:!0,className:"w-full",children:K.jsx(ju,{"code-path":"src/pages/NotFound.tsx:15:13",to:"/",children:"Back to Home"})})]})]})})}function d_(){return K.jsxs(x1,{"code-path":"src/App.tsx:9:5",children:[K.jsx(Wt,{"code-path":"src/App.tsx:10:7",path:"/",element:K.jsx(iw,{"code-path":"src/App.tsx:10:32"})}),K.jsx(Wt,{"code-path":"src/App.tsx:11:7",path:"/xbgst",element:K.jsx(hr,{"code-path":"src/App.tsx:11:37",page:"xbgst"})}),K.jsx(Wt,{"code-path":"src/App.tsx:12:7",path:"/exa",element:K.jsx(hr,{"code-path":"src/App.tsx:12:35",page:"exa"})}),K.jsx(Wt,{"code-path":"src/App.tsx:13:7",path:"/bloat",element:K.jsx(hr,{"code-path":"src/App.tsx:13:37",page:"bloat"})}),K.jsx(Wt,{"code-path":"src/App.tsx:14:7",path:"/speedrun",element:K.jsx(hr,{"code-path":"src/App.tsx:14:40",page:"speedrun"})}),K.jsx(Wt,{"code-path":"src/App.tsx:15:7",path:"/omegag",element:K.jsx(hr,{"code-path":"src/App.tsx:15:38",page:"omegag"})}),K.jsx(Wt,{"code-path":"src/App.tsx:16:7",path:"/omarchy-usage",element:K.jsx(hr,{"code-path":"src/App.tsx:16:45",page:"omarchy"})}),K.jsx(Wt,{"code-path":"src/App.tsx:17:7",path:"/login",element:K.jsx(c_,{"code-path":"src/App.tsx:17:37"})}),K.jsx(Wt,{"code-path":"src/App.tsx:18:7",path:"*",element:K.jsx(u_,{"code-path":"src/App.tsx:18:32"})})]})}xy.createRoot(document.getElementById("root")).render(K.jsx(_.StrictMode,{"code-path":"src/main.tsx:10:3",children:K.jsx(Q1,{"code-path":"src/main.tsx:11:5",children:K.jsx(Nk,{"code-path":"src/main.tsx:12:7",children:K.jsx(d_,{"code-path":"src/main.tsx:13:9"})})})}));
+</body>`)}const aw={main:Wk,exa:()=>su(Bk),bloat:()=>su(Pk),speedrun:ew,omegag:tw,omarchy:nw},Hh=new Map;function rw(a){let o=Hh.get(a);return o||(o=aw[a](),Hh.set(a,o)),o}function g0(a){let o=(a||"").trim();return o?(o=o.replace(/^\.\//,"/").replace(/^\/*/,"/"),o=o.replace(/\.html$/i,"").replace(/\/+$/,""),o===""?"/":{"/index":"/","/omarchy-usage":"/omarchy-usage"}[o]??o):null}function b0({page:a,onMessage:o,frameRef:l}){const s=_.useRef(null),u=_.useMemo(()=>rw(a),[a]),d=_.useRef(o);d.current=o;const p=h=>{s.current=h,l&&(l.current=h)};return _.useEffect(()=>{function h(f){const g=f.data;!g||typeof g!="object"||(g.type==="ds4cc:ready"||g.type==="ds4cc:rinnegan-request"||g.type==="ds4cc:navigate")&&d.current(g)}return window.addEventListener("message",h),()=>window.removeEventListener("message",h)},[]),K.jsx("iframe",{"code-path":"src/components/SiteFrame.tsx:45:5",ref:p,title:`ds4cc — ${a}`,srcDoc:u,style:{border:0,display:"block",width:"100%",height:"100vh",background:"#07060b"}})}const ow="/login";function Vu(a){const{redirectOnUnauthenticated:o=!1,redirectPath:l=ow}={},s=Sr(),u=_n.useUtils(),{data:d,isLoading:p,error:h,refetch:f}=_n.auth.me.useQuery(void 0,{staleTime:1e3*60*5,retry:!1}),g=_n.auth.logout.useMutation({onSuccess:async()=>{await u.invalidate(),s(l)}}),v=_.useCallback(()=>g.mutate(),[g]);return _.useEffect(()=>{o&&!p&&!d&&window.location.pathname!==l&&s(l)},[o,p,d,s,l]),_.useMemo(()=>({user:d??null,isAuthenticated:!!d,isLoading:p||g.isPending,error:h,logout:v,refresh:f}),[d,p,g.isPending,h,v,f])}function lw({open:a,onClose:o,onUnlocked:l}){const s=Sr(),{isAuthenticated:u,user:d}=Vu(),[p,h]=_.useState("USD"),f=_n.useUtils(),g=_n.rinnegan.unlock.useMutation({onSuccess:async()=>{await f.rinnegan.status.invalidate(),l(),o()}});return a?K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:31:5",className:"kc-overlay",role:"dialog","aria-modal":"true","aria-label":"Rinnegan access",children:K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:32:7",className:"kc-gate",children:[K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:33:9",className:"kc-gate-head",children:[K.jsx("span",{"code-path":"src/components/RinneganGate.tsx:34:11",className:"kc-gate-eye","aria-hidden":"true"}),K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:35:11",children:[K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:36:13",className:"kc-gate-kicker",children:"rinnegan // omp-only tier"}),K.jsx("h2",{"code-path":"src/components/RinneganGate.tsx:37:13",className:"kc-gate-title",children:"The gate admits one substrate."})]})]}),K.jsxs("p",{"code-path":"src/components/RinneganGate.tsx:41:9",className:"kc-gate-copy",children:["The rinnegan catalog serves ",K.jsx("b",{"code-path":"src/components/RinneganGate.tsx:42:39",children:"omp"})," — the SS+ host CLI. Nothing else makes the cut; the other substrates have their place in normal mode. Access costs exactly ",K.jsx("b",{"code-path":"src/components/RinneganGate.tsx:44:38",children:"1 unit of any currency you choose"}),", on your honor. No processor, no middleman: pay it by whatever means you have, the pledge is the receipt."]}),u?K.jsxs("form",{"code-path":"src/components/RinneganGate.tsx:66:11",className:"kc-gate-actions",onSubmit:v=>{v.preventDefault(),g.mutate({currency:p})},children:[K.jsxs("label",{"code-path":"src/components/RinneganGate.tsx:73:13",className:"kc-field",children:[K.jsx("span",{"code-path":"src/components/RinneganGate.tsx:74:15",children:"currency — any, yours to name"}),K.jsx("input",{"code-path":"src/components/RinneganGate.tsx:75:15",value:p,onChange:v=>h(v.target.value),maxLength:16,placeholder:"USD",autoFocus:!0})]}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:83:13",type:"submit",className:"kc-btn solid",disabled:g.isPending||!p.trim(),children:g.isPending?"pledging…":`Pledge 1 ${p.trim().toUpperCase()||"—"} & unlock`}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:92:13",type:"button",className:"kc-btn",onClick:o,children:"not yet"}),g.error&&K.jsx("div",{"code-path":"src/components/RinneganGate.tsx:96:15",className:"kc-gate-err",children:g.error.message||"pledge failed — try again"}),K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:100:13",className:"kc-gate-note",children:["signed in as ",d?.name??"operator"," — the toggle stays per-visit after this, never persisted"]})]}):K.jsxs("div",{"code-path":"src/components/RinneganGate.tsx:50:11",className:"kc-gate-actions",children:[K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:51:13",type:"button",className:"kc-btn solid",onClick:()=>{o(),s("/login")},children:"Sign in with Kimi to pledge"}),K.jsx("button",{"code-path":"src/components/RinneganGate.tsx:61:13",type:"button",className:"kc-btn",onClick:o,children:"stay in normal mode"})]})]})}):null}function v0(){const a=Sr(),{user:o,isAuthenticated:l,isLoading:s,logout:u}=Vu(),d=_n.rinnegan.status.useQuery(void 0,{enabled:l});return K.jsx("div",{"code-path":"src/components/AccountBar.tsx:15:5",className:"kc-bar",children:s?null:l?K.jsxs(K.Fragment,{children:[K.jsxs("span",{"code-path":"src/components/AccountBar.tsx:26:11",className:"kc-chip kc-chip-id",children:[o?.name??"operator",K.jsx("i",{"code-path":"src/components/AccountBar.tsx:28:13",className:d.data?.unlocked?"kc-dot kc-dot-on":"kc-dot",title:d.data?.unlocked?"rinnegan pledged":"normal mode"})]}),K.jsx("button",{"code-path":"src/components/AccountBar.tsx:35:11",type:"button",className:"kc-chip",onClick:()=>{u()},children:"sign out"})]}):K.jsx("button",{"code-path":"src/components/AccountBar.tsx:17:9",type:"button",className:"kc-chip",onClick:()=>a("/login"),children:"sign in"})})}function iw(){const a=Sr(),{isAuthenticated:o,isLoading:l}=Vu(),u=!!_n.rinnegan.status.useQuery(void 0,{enabled:o}).data?.unlocked,[d,p]=_.useState(!1),h=_.useRef(null),f=_.useCallback(v=>{h.current?.contentWindow?.postMessage({type:"ds4cc:rinnegan-set",on:v},"*")},[]),g=_.useCallback(v=>{if(v.type==="ds4cc:navigate"){const y=g0(v.path);y&&a(y);return}if(v.type==="ds4cc:rinnegan-request"){if(l)return;if(!o||!u){p(!0);return}f(!v.current)}},[l,o,u,f,a]);return K.jsxs("div",{"code-path":"src/pages/Home.tsx:49:5",className:"kc-host",children:[K.jsx(b0,{"code-path":"src/pages/Home.tsx:50:7",page:"main",onMessage:g,frameRef:h}),K.jsx(v0,{"code-path":"src/pages/Home.tsx:51:7"}),K.jsx(lw,{"code-path":"src/pages/Home.tsx:52:7",open:d,onClose:()=>p(!1),onUnlocked:()=>f(!0)})]})}function hr({page:a}){const o=Sr(),l=_.useCallback(s=>{if(s.type==="ds4cc:navigate"){const u=g0(s.path);u&&o(u)}},[o]);return K.jsxs("div",{"code-path":"src/pages/SubPage.tsx:21:5",className:"kc-host",children:[K.jsx(b0,{"code-path":"src/pages/SubPage.tsx:22:7",page:a,onMessage:l}),K.jsx(v0,{"code-path":"src/pages/SubPage.tsx:23:7"})]})}function y0(a){var o,l,s="";if(typeof a=="string"||typeof a=="number")s+=a;else if(typeof a=="object")if(Array.isArray(a)){var u=a.length;for(o=0;o<u;o++)a[o]&&(l=y0(a[o]))&&(s&&(s+=" "),s+=l)}else for(l in a)a[l]&&(s&&(s+=" "),s+=l);return s}function x0(){for(var a,o,l=0,s="",u=arguments.length;l<u;l++)(a=arguments[l])&&(o=y0(a))&&(s&&(s+=" "),s+=o);return s}const sw=(a,o)=>{const l=new Array(a.length+o.length);for(let s=0;s<a.length;s++)l[s]=a[s];for(let s=0;s<o.length;s++)l[a.length+s]=o[s];return l},cw=(a,o)=>({classGroupId:a,validator:o}),k0=(a=new Map,o=null,l)=>({nextPart:a,validators:o,classGroupId:l}),yi="-",Uh=[],uw="arbitrary..",dw=a=>{const o=fw(a),{conflictingClassGroups:l,conflictingClassGroupModifiers:s}=a;return{getClassGroupId:p=>{if(p.startsWith("[")&&p.endsWith("]"))return pw(p);const h=p.split(yi),f=h[0]===""&&h.length>1?1:0;return w0(h,f,o)},getConflictingClassGroupIds:(p,h)=>{if(h){const f=s[p],g=l[p];return f?g?sw(g,f):f:g||Uh}return l[p]||Uh}}},w0=(a,o,l)=>{if(a.length-o===0)return l.classGroupId;const u=a[o],d=l.nextPart.get(u);if(d){const g=w0(a,o+1,d);if(g)return g}const p=l.validators;if(p===null)return;const h=o===0?a.join(yi):a.slice(o).join(yi),f=p.length;for(let g=0;g<f;g++){const v=p[g];if(v.validator(h))return v.classGroupId}},pw=a=>a.slice(1,-1).indexOf(":")===-1?void 0:(()=>{const o=a.slice(1,-1),l=o.indexOf(":"),s=o.slice(0,l);return s?uw+s:void 0})(),fw=a=>{const{theme:o,classGroups:l}=a;return mw(l,o)},mw=(a,o)=>{const l=k0();for(const s in a){const u=a[s];Yu(u,l,s,o)}return l},Yu=(a,o,l,s)=>{const u=a.length;for(let d=0;d<u;d++){const p=a[d];hw(p,o,l,s)}},hw=(a,o,l,s)=>{if(typeof a=="string"){gw(a,o,l);return}if(typeof a=="function"){bw(a,o,l,s);return}vw(a,o,l,s)},gw=(a,o,l)=>{const s=a===""?o:_0(o,a);s.classGroupId=l},bw=(a,o,l,s)=>{if(yw(a)){Yu(a(s),o,l,s);return}o.validators===null&&(o.validators=[]),o.validators.push(cw(l,a))},vw=(a,o,l,s)=>{const u=Object.entries(a),d=u.length;for(let p=0;p<d;p++){const[h,f]=u[p];Yu(f,_0(o,h),l,s)}},_0=(a,o)=>{let l=a;const s=o.split(yi),u=s.length;for(let d=0;d<u;d++){const p=s[d];let h=l.nextPart.get(p);h||(h=k0(),l.nextPart.set(p,h)),l=h}return l},yw=a=>"isThemeGetter"in a&&a.isThemeGetter===!0,xw=a=>{if(a<1)return{get:()=>{},set:()=>{}};let o=0,l=Object.create(null),s=Object.create(null);const u=(d,p)=>{l[d]=p,o++,o>a&&(o=0,s=l,l=Object.create(null))};return{get(d){let p=l[d];if(p!==void 0)return p;if((p=s[d])!==void 0)return u(d,p),p},set(d,p){d in l?l[d]=p:u(d,p)}}},Cu="!",Bh=":",kw=[],Ph=(a,o,l,s,u)=>({modifiers:a,hasImportantModifier:o,baseClassName:l,maybePostfixModifierPosition:s,isExternal:u}),ww=a=>{const{prefix:o,experimentalParseClassName:l}=a;let s=u=>{const d=[];let p=0,h=0,f=0,g;const v=u.length;for(let A=0;A<v;A++){const L=u[A];if(p===0&&h===0){if(L===Bh){d.push(u.slice(f,A)),f=A+1;continue}if(L==="/"){g=A;continue}}L==="["?p++:L==="]"?p--:L==="("?h++:L===")"&&h--}const y=d.length===0?u:u.slice(f);let C=y,D=!1;y.endsWith(Cu)?(C=y.slice(0,-1),D=!0):y.startsWith(Cu)&&(C=y.slice(1),D=!0);const N=g&&g>f?g-f:void 0;return Ph(d,D,C,N)};if(o){const u=o+Bh,d=s;s=p=>p.startsWith(u)?d(p.slice(u.length)):Ph(kw,!1,p,void 0,!0)}if(l){const u=s;s=d=>l({className:d,parseClassName:u})}return s},_w=a=>{const o=new Map;return a.orderSensitiveModifiers.forEach((l,s)=>{o.set(l,1e6+s)}),l=>{const s=[];let u=[];for(let d=0;d<l.length;d++){const p=l[d],h=p[0]==="[",f=o.has(p);h||f?(u.length>0&&(u.sort(),s.push(...u),u=[]),s.push(p)):u.push(p)}return u.length>0&&(u.sort(),s.push(...u)),s}},Sw=a=>({cache:xw(a.cacheSize),parseClassName:ww(a),sortModifiers:_w(a),...dw(a)}),Cw=/\s+/,Tw=(a,o)=>{const{parseClassName:l,getClassGroupId:s,getConflictingClassGroupIds:u,sortModifiers:d}=o,p=[],h=a.trim().split(Cw);let f="";for(let g=h.length-1;g>=0;g-=1){const v=h[g],{isExternal:y,modifiers:C,hasImportantModifier:D,baseClassName:N,maybePostfixModifierPosition:A}=l(v);if(y){f=v+(f.length>0?" "+f:f);continue}let L=!!A,Y=s(L?N.substring(0,A):N);if(!Y){if(!L){f=v+(f.length>0?" "+f:f);continue}if(Y=s(N),!Y){f=v+(f.length>0?" "+f:f);continue}L=!1}const I=C.length===0?"":C.length===1?C[0]:d(C).join(":"),F=D?I+Cu:I,pe=F+Y;if(p.indexOf(pe)>-1)continue;p.push(pe);const Z=u(Y,L);for(let V=0;V<Z.length;++V){const z=Z[V];p.push(F+z)}f=v+(f.length>0?" "+f:f)}return f},Ow=(...a)=>{let o=0,l,s,u="";for(;o<a.length;)(l=a[o++])&&(s=S0(l))&&(u&&(u+=" "),u+=s);return u},S0=a=>{if(typeof a=="string")return a;let o,l="";for(let s=0;s<a.length;s++)a[s]&&(o=S0(a[s]))&&(l&&(l+=" "),l+=o);return l},Ew=(a,...o)=>{let l,s,u,d;const p=f=>{const g=o.reduce((v,y)=>y(v),a());return l=Sw(g),s=l.cache.get,u=l.cache.set,d=h,h(f)},h=f=>{const g=s(f);if(g)return g;const v=Tw(f,l);return u(f,v),v};return d=p,(...f)=>d(Ow(...f))},Aw=[],et=a=>{const o=l=>l[a]||Aw;return o.isThemeGetter=!0,o},C0=/^\[(?:(\w[\w-]*):)?(.+)\]$/i,T0=/^\((?:(\w[\w-]*):)?(.+)\)$/i,Mw=/^\d+\/\d+$/,Lw=/^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/,Rw=/\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/,Dw=/^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix)\(.+\)$/,zw=/^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/,jw=/^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/,gr=a=>Mw.test(a),xe=a=>!!a&&!Number.isNaN(Number(a)),ea=a=>!!a&&Number.isInteger(Number(a)),cu=a=>a.endsWith("%")&&xe(a.slice(0,-1)),wn=a=>Lw.test(a),Nw=()=>!0,Hw=a=>Rw.test(a)&&!Dw.test(a),O0=()=>!1,Uw=a=>zw.test(a),Bw=a=>jw.test(a),Pw=a=>!ne(a)&&!ae(a),qw=a=>Cr(a,M0,O0),ne=a=>C0.test(a),Sa=a=>Cr(a,L0,Hw),uu=a=>Cr(a,Vw,xe),qh=a=>Cr(a,E0,O0),Gw=a=>Cr(a,A0,Bw),ci=a=>Cr(a,R0,Uw),ae=a=>T0.test(a),Co=a=>Tr(a,L0),$w=a=>Tr(a,Yw),Gh=a=>Tr(a,E0),Qw=a=>Tr(a,M0),Zw=a=>Tr(a,A0),ui=a=>Tr(a,R0,!0),Cr=(a,o,l)=>{const s=C0.exec(a);return s?s[1]?o(s[1]):l(s[2]):!1},Tr=(a,o,l=!1)=>{const s=T0.exec(a);return s?s[1]?o(s[1]):l:!1},E0=a=>a==="position"||a==="percentage",A0=a=>a==="image"||a==="url",M0=a=>a==="length"||a==="size"||a==="bg-size",L0=a=>a==="length",Vw=a=>a==="number",Yw=a=>a==="family-name",R0=a=>a==="shadow",Kw=()=>{const a=et("color"),o=et("font"),l=et("text"),s=et("font-weight"),u=et("tracking"),d=et("leading"),p=et("breakpoint"),h=et("container"),f=et("spacing"),g=et("radius"),v=et("shadow"),y=et("inset-shadow"),C=et("text-shadow"),D=et("drop-shadow"),N=et("blur"),A=et("perspective"),L=et("aspect"),Y=et("ease"),I=et("animate"),F=()=>["auto","avoid","all","avoid-page","page","left","right","column"],pe=()=>["center","top","bottom","left","right","top-left","left-top","top-right","right-top","bottom-right","right-bottom","bottom-left","left-bottom"],Z=()=>[...pe(),ae,ne],V=()=>["auto","hidden","clip","visible","scroll"],z=()=>["auto","contain","none"],G=()=>[ae,ne,f],J=()=>[gr,"full","auto",...G()],oe=()=>[ea,"none","subgrid",ae,ne],le=()=>["auto",{span:["full",ea,ae,ne]},ea,ae,ne],te=()=>[ea,"auto",ae,ne],be=()=>["auto","min","max","fr",ae,ne],fe=()=>["start","end","center","between","around","evenly","stretch","baseline","center-safe","end-safe"],se=()=>["start","end","center","stretch","center-safe","end-safe"],T=()=>["auto",...G()],$=()=>[gr,"auto","full","dvw","dvh","lvw","lvh","svw","svh","min","max","fit",...G()],U=()=>[a,ae,ne],ue=()=>[...pe(),Gh,qh,{position:[ae,ne]}],ye=()=>["no-repeat",{repeat:["","x","y","space","round"]}],k=()=>["auto","cover","contain",Qw,qw,{size:[ae,ne]}],j=()=>[cu,Co,Sa],P=()=>["","none","full",g,ae,ne],Q=()=>["",xe,Co,Sa],W=()=>["solid","dashed","dotted","double"],me=()=>["normal","multiply","screen","overlay","darken","lighten","color-dodge","color-burn","hard-light","soft-light","difference","exclusion","hue","saturation","color","luminosity"],ce=()=>[xe,cu,Gh,qh],tt=()=>["","none",N,ae,ne],He=()=>["none",xe,ae,ne],Yt=()=>["none",xe,ae,ne],On=()=>[xe,ae,ne],En=()=>[gr,"full",...G()];return{cacheSize:500,theme:{animate:["spin","ping","pulse","bounce"],aspect:["video"],blur:[wn],breakpoint:[wn],color:[Nw],container:[wn],"drop-shadow":[wn],ease:["in","out","in-out"],font:[Pw],"font-weight":["thin","extralight","light","normal","medium","semibold","bold","extrabold","black"],"inset-shadow":[wn],leading:["none","tight","snug","normal","relaxed","loose"],perspective:["dramatic","near","normal","midrange","distant","none"],radius:[wn],shadow:[wn],spacing:["px",xe],text:[wn],"text-shadow":[wn],tracking:["tighter","tight","normal","wide","wider","widest"]},classGroups:{aspect:[{aspect:["auto","square",gr,ne,ae,L]}],container:["container"],columns:[{columns:[xe,ne,ae,h]}],"break-after":[{"break-after":F()}],"break-before":[{"break-before":F()}],"break-inside":[{"break-inside":["auto","avoid","avoid-page","avoid-column"]}],"box-decoration":[{"box-decoration":["slice","clone"]}],box:[{box:["border","content"]}],display:["block","inline-block","inline","flex","inline-flex","table","inline-table","table-caption","table-cell","table-column","table-column-group","table-footer-group","table-header-group","table-row-group","table-row","flow-root","grid","inline-grid","contents","list-item","hidden"],sr:["sr-only","not-sr-only"],float:[{float:["right","left","none","start","end"]}],clear:[{clear:["left","right","both","none","start","end"]}],isolation:["isolate","isolation-auto"],"object-fit":[{object:["contain","cover","fill","none","scale-down"]}],"object-position":[{object:Z()}],overflow:[{overflow:V()}],"overflow-x":[{"overflow-x":V()}],"overflow-y":[{"overflow-y":V()}],overscroll:[{overscroll:z()}],"overscroll-x":[{"overscroll-x":z()}],"overscroll-y":[{"overscroll-y":z()}],position:["static","fixed","absolute","relative","sticky"],inset:[{inset:J()}],"inset-x":[{"inset-x":J()}],"inset-y":[{"inset-y":J()}],start:[{start:J()}],end:[{end:J()}],top:[{top:J()}],right:[{right:J()}],bottom:[{bottom:J()}],left:[{left:J()}],visibility:["visible","invisible","collapse"],z:[{z:[ea,"auto",ae,ne]}],basis:[{basis:[gr,"full","auto",h,...G()]}],"flex-direction":[{flex:["row","row-reverse","col","col-reverse"]}],"flex-wrap":[{flex:["nowrap","wrap","wrap-reverse"]}],flex:[{flex:[xe,gr,"auto","initial","none",ne]}],grow:[{grow:["",xe,ae,ne]}],shrink:[{shrink:["",xe,ae,ne]}],order:[{order:[ea,"first","last","none",ae,ne]}],"grid-cols":[{"grid-cols":oe()}],"col-start-end":[{col:le()}],"col-start":[{"col-start":te()}],"col-end":[{"col-end":te()}],"grid-rows":[{"grid-rows":oe()}],"row-start-end":[{row:le()}],"row-start":[{"row-start":te()}],"row-end":[{"row-end":te()}],"grid-flow":[{"grid-flow":["row","col","dense","row-dense","col-dense"]}],"auto-cols":[{"auto-cols":be()}],"auto-rows":[{"auto-rows":be()}],gap:[{gap:G()}],"gap-x":[{"gap-x":G()}],"gap-y":[{"gap-y":G()}],"justify-content":[{justify:[...fe(),"normal"]}],"justify-items":[{"justify-items":[...se(),"normal"]}],"justify-self":[{"justify-self":["auto",...se()]}],"align-content":[{content:["normal",...fe()]}],"align-items":[{items:[...se(),{baseline:["","last"]}]}],"align-self":[{self:["auto",...se(),{baseline:["","last"]}]}],"place-content":[{"place-content":fe()}],"place-items":[{"place-items":[...se(),"baseline"]}],"place-self":[{"place-self":["auto",...se()]}],p:[{p:G()}],px:[{px:G()}],py:[{py:G()}],ps:[{ps:G()}],pe:[{pe:G()}],pt:[{pt:G()}],pr:[{pr:G()}],pb:[{pb:G()}],pl:[{pl:G()}],m:[{m:T()}],mx:[{mx:T()}],my:[{my:T()}],ms:[{ms:T()}],me:[{me:T()}],mt:[{mt:T()}],mr:[{mr:T()}],mb:[{mb:T()}],ml:[{ml:T()}],"space-x":[{"space-x":G()}],"space-x-reverse":["space-x-reverse"],"space-y":[{"space-y":G()}],"space-y-reverse":["space-y-reverse"],size:[{size:$()}],w:[{w:[h,"screen",...$()]}],"min-w":[{"min-w":[h,"screen","none",...$()]}],"max-w":[{"max-w":[h,"screen","none","prose",{screen:[p]},...$()]}],h:[{h:["screen","lh",...$()]}],"min-h":[{"min-h":["screen","lh","none",...$()]}],"max-h":[{"max-h":["screen","lh",...$()]}],"font-size":[{text:["base",l,Co,Sa]}],"font-smoothing":["antialiased","subpixel-antialiased"],"font-style":["italic","not-italic"],"font-weight":[{font:[s,ae,uu]}],"font-stretch":[{"font-stretch":["ultra-condensed","extra-condensed","condensed","semi-condensed","normal","semi-expanded","expanded","extra-expanded","ultra-expanded",cu,ne]}],"font-family":[{font:[$w,ne,o]}],"fvn-normal":["normal-nums"],"fvn-ordinal":["ordinal"],"fvn-slashed-zero":["slashed-zero"],"fvn-figure":["lining-nums","oldstyle-nums"],"fvn-spacing":["proportional-nums","tabular-nums"],"fvn-fraction":["diagonal-fractions","stacked-fractions"],tracking:[{tracking:[u,ae,ne]}],"line-clamp":[{"line-clamp":[xe,"none",ae,uu]}],leading:[{leading:[d,...G()]}],"list-image":[{"list-image":["none",ae,ne]}],"list-style-position":[{list:["inside","outside"]}],"list-style-type":[{list:["disc","decimal","none",ae,ne]}],"text-alignment":[{text:["left","center","right","justify","start","end"]}],"placeholder-color":[{placeholder:U()}],"text-color":[{text:U()}],"text-decoration":["underline","overline","line-through","no-underline"],"text-decoration-style":[{decoration:[...W(),"wavy"]}],"text-decoration-thickness":[{decoration:[xe,"from-font","auto",ae,Sa]}],"text-decoration-color":[{decoration:U()}],"underline-offset":[{"underline-offset":[xe,"auto",ae,ne]}],"text-transform":["uppercase","lowercase","capitalize","normal-case"],"text-overflow":["truncate","text-ellipsis","text-clip"],"text-wrap":[{text:["wrap","nowrap","balance","pretty"]}],indent:[{indent:G()}],"vertical-align":[{align:["baseline","top","middle","bottom","text-top","text-bottom","sub","super",ae,ne]}],whitespace:[{whitespace:["normal","nowrap","pre","pre-line","pre-wrap","break-spaces"]}],break:[{break:["normal","words","all","keep"]}],wrap:[{wrap:["break-word","anywhere","normal"]}],hyphens:[{hyphens:["none","manual","auto"]}],content:[{content:["none",ae,ne]}],"bg-attachment":[{bg:["fixed","local","scroll"]}],"bg-clip":[{"bg-clip":["border","padding","content","text"]}],"bg-origin":[{"bg-origin":["border","padding","content"]}],"bg-position":[{bg:ue()}],"bg-repeat":[{bg:ye()}],"bg-size":[{bg:k()}],"bg-image":[{bg:["none",{linear:[{to:["t","tr","r","br","b","bl","l","tl"]},ea,ae,ne],radial:["",ae,ne],conic:[ea,ae,ne]},Zw,Gw]}],"bg-color":[{bg:U()}],"gradient-from-pos":[{from:j()}],"gradient-via-pos":[{via:j()}],"gradient-to-pos":[{to:j()}],"gradient-from":[{from:U()}],"gradient-via":[{via:U()}],"gradient-to":[{to:U()}],rounded:[{rounded:P()}],"rounded-s":[{"rounded-s":P()}],"rounded-e":[{"rounded-e":P()}],"rounded-t":[{"rounded-t":P()}],"rounded-r":[{"rounded-r":P()}],"rounded-b":[{"rounded-b":P()}],"rounded-l":[{"rounded-l":P()}],"rounded-ss":[{"rounded-ss":P()}],"rounded-se":[{"rounded-se":P()}],"rounded-ee":[{"rounded-ee":P()}],"rounded-es":[{"rounded-es":P()}],"rounded-tl":[{"rounded-tl":P()}],"rounded-tr":[{"rounded-tr":P()}],"rounded-br":[{"rounded-br":P()}],"rounded-bl":[{"rounded-bl":P()}],"border-w":[{border:Q()}],"border-w-x":[{"border-x":Q()}],"border-w-y":[{"border-y":Q()}],"border-w-s":[{"border-s":Q()}],"border-w-e":[{"border-e":Q()}],"border-w-t":[{"border-t":Q()}],"border-w-r":[{"border-r":Q()}],"border-w-b":[{"border-b":Q()}],"border-w-l":[{"border-l":Q()}],"divide-x":[{"divide-x":Q()}],"divide-x-reverse":["divide-x-reverse"],"divide-y":[{"divide-y":Q()}],"divide-y-reverse":["divide-y-reverse"],"border-style":[{border:[...W(),"hidden","none"]}],"divide-style":[{divide:[...W(),"hidden","none"]}],"border-color":[{border:U()}],"border-color-x":[{"border-x":U()}],"border-color-y":[{"border-y":U()}],"border-color-s":[{"border-s":U()}],"border-color-e":[{"border-e":U()}],"border-color-t":[{"border-t":U()}],"border-color-r":[{"border-r":U()}],"border-color-b":[{"border-b":U()}],"border-color-l":[{"border-l":U()}],"divide-color":[{divide:U()}],"outline-style":[{outline:[...W(),"none","hidden"]}],"outline-offset":[{"outline-offset":[xe,ae,ne]}],"outline-w":[{outline:["",xe,Co,Sa]}],"outline-color":[{outline:U()}],shadow:[{shadow:["","none",v,ui,ci]}],"shadow-color":[{shadow:U()}],"inset-shadow":[{"inset-shadow":["none",y,ui,ci]}],"inset-shadow-color":[{"inset-shadow":U()}],"ring-w":[{ring:Q()}],"ring-w-inset":["ring-inset"],"ring-color":[{ring:U()}],"ring-offset-w":[{"ring-offset":[xe,Sa]}],"ring-offset-color":[{"ring-offset":U()}],"inset-ring-w":[{"inset-ring":Q()}],"inset-ring-color":[{"inset-ring":U()}],"text-shadow":[{"text-shadow":["none",C,ui,ci]}],"text-shadow-color":[{"text-shadow":U()}],opacity:[{opacity:[xe,ae,ne]}],"mix-blend":[{"mix-blend":[...me(),"plus-darker","plus-lighter"]}],"bg-blend":[{"bg-blend":me()}],"mask-clip":[{"mask-clip":["border","padding","content","fill","stroke","view"]},"mask-no-clip"],"mask-composite":[{mask:["add","subtract","intersect","exclude"]}],"mask-image-linear-pos":[{"mask-linear":[xe]}],"mask-image-linear-from-pos":[{"mask-linear-from":ce()}],"mask-image-linear-to-pos":[{"mask-linear-to":ce()}],"mask-image-linear-from-color":[{"mask-linear-from":U()}],"mask-image-linear-to-color":[{"mask-linear-to":U()}],"mask-image-t-from-pos":[{"mask-t-from":ce()}],"mask-image-t-to-pos":[{"mask-t-to":ce()}],"mask-image-t-from-color":[{"mask-t-from":U()}],"mask-image-t-to-color":[{"mask-t-to":U()}],"mask-image-r-from-pos":[{"mask-r-from":ce()}],"mask-image-r-to-pos":[{"mask-r-to":ce()}],"mask-image-r-from-color":[{"mask-r-from":U()}],"mask-image-r-to-color":[{"mask-r-to":U()}],"mask-image-b-from-pos":[{"mask-b-from":ce()}],"mask-image-b-to-pos":[{"mask-b-to":ce()}],"mask-image-b-from-color":[{"mask-b-from":U()}],"mask-image-b-to-color":[{"mask-b-to":U()}],"mask-image-l-from-pos":[{"mask-l-from":ce()}],"mask-image-l-to-pos":[{"mask-l-to":ce()}],"mask-image-l-from-color":[{"mask-l-from":U()}],"mask-image-l-to-color":[{"mask-l-to":U()}],"mask-image-x-from-pos":[{"mask-x-from":ce()}],"mask-image-x-to-pos":[{"mask-x-to":ce()}],"mask-image-x-from-color":[{"mask-x-from":U()}],"mask-image-x-to-color":[{"mask-x-to":U()}],"mask-image-y-from-pos":[{"mask-y-from":ce()}],"mask-image-y-to-pos":[{"mask-y-to":ce()}],"mask-image-y-from-color":[{"mask-y-from":U()}],"mask-image-y-to-color":[{"mask-y-to":U()}],"mask-image-radial":[{"mask-radial":[ae,ne]}],"mask-image-radial-from-pos":[{"mask-radial-from":ce()}],"mask-image-radial-to-pos":[{"mask-radial-to":ce()}],"mask-image-radial-from-color":[{"mask-radial-from":U()}],"mask-image-radial-to-color":[{"mask-radial-to":U()}],"mask-image-radial-shape":[{"mask-radial":["circle","ellipse"]}],"mask-image-radial-size":[{"mask-radial":[{closest:["side","corner"],farthest:["side","corner"]}]}],"mask-image-radial-pos":[{"mask-radial-at":pe()}],"mask-image-conic-pos":[{"mask-conic":[xe]}],"mask-image-conic-from-pos":[{"mask-conic-from":ce()}],"mask-image-conic-to-pos":[{"mask-conic-to":ce()}],"mask-image-conic-from-color":[{"mask-conic-from":U()}],"mask-image-conic-to-color":[{"mask-conic-to":U()}],"mask-mode":[{mask:["alpha","luminance","match"]}],"mask-origin":[{"mask-origin":["border","padding","content","fill","stroke","view"]}],"mask-position":[{mask:ue()}],"mask-repeat":[{mask:ye()}],"mask-size":[{mask:k()}],"mask-type":[{"mask-type":["alpha","luminance"]}],"mask-image":[{mask:["none",ae,ne]}],filter:[{filter:["","none",ae,ne]}],blur:[{blur:tt()}],brightness:[{brightness:[xe,ae,ne]}],contrast:[{contrast:[xe,ae,ne]}],"drop-shadow":[{"drop-shadow":["","none",D,ui,ci]}],"drop-shadow-color":[{"drop-shadow":U()}],grayscale:[{grayscale:["",xe,ae,ne]}],"hue-rotate":[{"hue-rotate":[xe,ae,ne]}],invert:[{invert:["",xe,ae,ne]}],saturate:[{saturate:[xe,ae,ne]}],sepia:[{sepia:["",xe,ae,ne]}],"backdrop-filter":[{"backdrop-filter":["","none",ae,ne]}],"backdrop-blur":[{"backdrop-blur":tt()}],"backdrop-brightness":[{"backdrop-brightness":[xe,ae,ne]}],"backdrop-contrast":[{"backdrop-contrast":[xe,ae,ne]}],"backdrop-grayscale":[{"backdrop-grayscale":["",xe,ae,ne]}],"backdrop-hue-rotate":[{"backdrop-hue-rotate":[xe,ae,ne]}],"backdrop-invert":[{"backdrop-invert":["",xe,ae,ne]}],"backdrop-opacity":[{"backdrop-opacity":[xe,ae,ne]}],"backdrop-saturate":[{"backdrop-saturate":[xe,ae,ne]}],"backdrop-sepia":[{"backdrop-sepia":["",xe,ae,ne]}],"border-collapse":[{border:["collapse","separate"]}],"border-spacing":[{"border-spacing":G()}],"border-spacing-x":[{"border-spacing-x":G()}],"border-spacing-y":[{"border-spacing-y":G()}],"table-layout":[{table:["auto","fixed"]}],caption:[{caption:["top","bottom"]}],transition:[{transition:["","all","colors","opacity","shadow","transform","none",ae,ne]}],"transition-behavior":[{transition:["normal","discrete"]}],duration:[{duration:[xe,"initial",ae,ne]}],ease:[{ease:["linear","initial",Y,ae,ne]}],delay:[{delay:[xe,ae,ne]}],animate:[{animate:["none",I,ae,ne]}],backface:[{backface:["hidden","visible"]}],perspective:[{perspective:[A,ae,ne]}],"perspective-origin":[{"perspective-origin":Z()}],rotate:[{rotate:He()}],"rotate-x":[{"rotate-x":He()}],"rotate-y":[{"rotate-y":He()}],"rotate-z":[{"rotate-z":He()}],scale:[{scale:Yt()}],"scale-x":[{"scale-x":Yt()}],"scale-y":[{"scale-y":Yt()}],"scale-z":[{"scale-z":Yt()}],"scale-3d":["scale-3d"],skew:[{skew:On()}],"skew-x":[{"skew-x":On()}],"skew-y":[{"skew-y":On()}],transform:[{transform:[ae,ne,"","none","gpu","cpu"]}],"transform-origin":[{origin:Z()}],"transform-style":[{transform:["3d","flat"]}],translate:[{translate:En()}],"translate-x":[{"translate-x":En()}],"translate-y":[{"translate-y":En()}],"translate-z":[{"translate-z":En()}],"translate-none":["translate-none"],accent:[{accent:U()}],appearance:[{appearance:["none","auto"]}],"caret-color":[{caret:U()}],"color-scheme":[{scheme:["normal","dark","light","light-dark","only-dark","only-light"]}],cursor:[{cursor:["auto","default","pointer","wait","text","move","help","not-allowed","none","context-menu","progress","cell","crosshair","vertical-text","alias","copy","no-drop","grab","grabbing","all-scroll","col-resize","row-resize","n-resize","e-resize","s-resize","w-resize","ne-resize","nw-resize","se-resize","sw-resize","ew-resize","ns-resize","nesw-resize","nwse-resize","zoom-in","zoom-out",ae,ne]}],"field-sizing":[{"field-sizing":["fixed","content"]}],"pointer-events":[{"pointer-events":["auto","none"]}],resize:[{resize:["none","","y","x"]}],"scroll-behavior":[{scroll:["auto","smooth"]}],"scroll-m":[{"scroll-m":G()}],"scroll-mx":[{"scroll-mx":G()}],"scroll-my":[{"scroll-my":G()}],"scroll-ms":[{"scroll-ms":G()}],"scroll-me":[{"scroll-me":G()}],"scroll-mt":[{"scroll-mt":G()}],"scroll-mr":[{"scroll-mr":G()}],"scroll-mb":[{"scroll-mb":G()}],"scroll-ml":[{"scroll-ml":G()}],"scroll-p":[{"scroll-p":G()}],"scroll-px":[{"scroll-px":G()}],"scroll-py":[{"scroll-py":G()}],"scroll-ps":[{"scroll-ps":G()}],"scroll-pe":[{"scroll-pe":G()}],"scroll-pt":[{"scroll-pt":G()}],"scroll-pr":[{"scroll-pr":G()}],"scroll-pb":[{"scroll-pb":G()}],"scroll-pl":[{"scroll-pl":G()}],"snap-align":[{snap:["start","end","center","align-none"]}],"snap-stop":[{snap:["normal","always"]}],"snap-type":[{snap:["none","x","y","both"]}],"snap-strictness":[{snap:["mandatory","proximity"]}],touch:[{touch:["auto","none","manipulation"]}],"touch-x":[{"touch-pan":["x","left","right"]}],"touch-y":[{"touch-pan":["y","up","down"]}],"touch-pz":["touch-pinch-zoom"],select:[{select:["none","text","all","auto"]}],"will-change":[{"will-change":["auto","scroll","contents","transform",ae,ne]}],fill:[{fill:["none",...U()]}],"stroke-w":[{stroke:[xe,Co,Sa,uu]}],stroke:[{stroke:["none",...U()]}],"forced-color-adjust":[{"forced-color-adjust":["auto","none"]}]},conflictingClassGroups:{overflow:["overflow-x","overflow-y"],overscroll:["overscroll-x","overscroll-y"],inset:["inset-x","inset-y","start","end","top","right","bottom","left"],"inset-x":["right","left"],"inset-y":["top","bottom"],flex:["basis","grow","shrink"],gap:["gap-x","gap-y"],p:["px","py","ps","pe","pt","pr","pb","pl"],px:["pr","pl"],py:["pt","pb"],m:["mx","my","ms","me","mt","mr","mb","ml"],mx:["mr","ml"],my:["mt","mb"],size:["w","h"],"font-size":["leading"],"fvn-normal":["fvn-ordinal","fvn-slashed-zero","fvn-figure","fvn-spacing","fvn-fraction"],"fvn-ordinal":["fvn-normal"],"fvn-slashed-zero":["fvn-normal"],"fvn-figure":["fvn-normal"],"fvn-spacing":["fvn-normal"],"fvn-fraction":["fvn-normal"],"line-clamp":["display","overflow"],rounded:["rounded-s","rounded-e","rounded-t","rounded-r","rounded-b","rounded-l","rounded-ss","rounded-se","rounded-ee","rounded-es","rounded-tl","rounded-tr","rounded-br","rounded-bl"],"rounded-s":["rounded-ss","rounded-es"],"rounded-e":["rounded-se","rounded-ee"],"rounded-t":["rounded-tl","rounded-tr"],"rounded-r":["rounded-tr","rounded-br"],"rounded-b":["rounded-br","rounded-bl"],"rounded-l":["rounded-tl","rounded-bl"],"border-spacing":["border-spacing-x","border-spacing-y"],"border-w":["border-w-x","border-w-y","border-w-s","border-w-e","border-w-t","border-w-r","border-w-b","border-w-l"],"border-w-x":["border-w-r","border-w-l"],"border-w-y":["border-w-t","border-w-b"],"border-color":["border-color-x","border-color-y","border-color-s","border-color-e","border-color-t","border-color-r","border-color-b","border-color-l"],"border-color-x":["border-color-r","border-color-l"],"border-color-y":["border-color-t","border-color-b"],translate:["translate-x","translate-y","translate-none"],"translate-none":["translate","translate-x","translate-y","translate-z"],"scroll-m":["scroll-mx","scroll-my","scroll-ms","scroll-me","scroll-mt","scroll-mr","scroll-mb","scroll-ml"],"scroll-mx":["scroll-mr","scroll-ml"],"scroll-my":["scroll-mt","scroll-mb"],"scroll-p":["scroll-px","scroll-py","scroll-ps","scroll-pe","scroll-pt","scroll-pr","scroll-pb","scroll-pl"],"scroll-px":["scroll-pr","scroll-pl"],"scroll-py":["scroll-pt","scroll-pb"],touch:["touch-x","touch-y","touch-pz"],"touch-x":["touch"],"touch-y":["touch"],"touch-pz":["touch"]},conflictingClassGroupModifiers:{"font-size":["leading"]},orderSensitiveModifiers:["*","**","after","backdrop","before","details-content","file","first-letter","first-line","marker","placeholder","selection"]}},Iw=Ew(Kw);function Po(...a){return Iw(x0(a))}function D0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:7:5","data-slot":"card",className:Po("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",a),...o})}function z0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:20:5","data-slot":"card-header",className:Po("@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",a),...o})}function j0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:33:5","data-slot":"card-title",className:Po("leading-none font-semibold",a),...o})}function N0({className:a,...o}){return K.jsx("div",{"code-path":"src/components/ui/card.tsx:66:5","data-slot":"card-content",className:Po("px-6",a),...o})}function $h(a,o){if(typeof a=="function")return a(o);a!=null&&(a.current=o)}function Xw(...a){return o=>{let l=!1;const s=a.map(u=>{const d=$h(u,o);return!l&&typeof d=="function"&&(l=!0),d});if(l)return()=>{for(let u=0;u<s.length;u++){const d=s[u];typeof d=="function"?d():$h(a[u],null)}}}}var Fw=Symbol.for("react.lazy"),xi=Vh[" use ".trim().toString()];function Jw(a){return typeof a=="object"&&a!==null&&"then"in a}function H0(a){return a!=null&&typeof a=="object"&&"$$typeof"in a&&a.$$typeof===Fw&&"_payload"in a&&Jw(a._payload)}function Ww(a){const o=t_(a),l=_.forwardRef((s,u)=>{let{children:d,...p}=s;H0(d)&&typeof xi=="function"&&(d=xi(d._payload));const h=_.Children.toArray(d),f=h.find(a_);if(f){const g=f.props.children,v=h.map(y=>y===f?_.Children.count(g)>1?_.Children.only(null):_.isValidElement(g)?g.props.children:null:y);return K.jsx(o,{...p,ref:u,children:_.isValidElement(g)?_.cloneElement(g,void 0,v):null})}return K.jsx(o,{...p,ref:u,children:d})});return l.displayName=`${a}.Slot`,l}var e_=Ww("Slot");function t_(a){const o=_.forwardRef((l,s)=>{let{children:u,...d}=l;if(H0(u)&&typeof xi=="function"&&(u=xi(u._payload)),_.isValidElement(u)){const p=o_(u),h=r_(d,u.props);return u.type!==_.Fragment&&(h.ref=s?Xw(s,p):p),_.cloneElement(u,h)}return _.Children.count(u)>1?_.Children.only(null):null});return o.displayName=`${a}.SlotClone`,o}var n_=Symbol("radix.slottable");function a_(a){return _.isValidElement(a)&&typeof a.type=="function"&&"__radixId"in a.type&&a.type.__radixId===n_}function r_(a,o){const l={...o};for(const s in o){const u=a[s],d=o[s];/^on[A-Z]/.test(s)?u&&d?l[s]=(...h)=>{const f=d(...h);return u(...h),f}:u&&(l[s]=u):s==="style"?l[s]={...u,...d}:s==="className"&&(l[s]=[u,d].filter(Boolean).join(" "))}return{...a,...l}}function o_(a){let o=Object.getOwnPropertyDescriptor(a.props,"ref")?.get,l=o&&"isReactWarning"in o&&o.isReactWarning;return l?a.ref:(o=Object.getOwnPropertyDescriptor(a,"ref")?.get,l=o&&"isReactWarning"in o&&o.isReactWarning,l?a.props.ref:a.props.ref||a.ref)}const Qh=a=>typeof a=="boolean"?`${a}`:a===0?"0":a,Zh=x0,l_=(a,o)=>l=>{var s;if(o?.variants==null)return Zh(a,l?.class,l?.className);const{variants:u,defaultVariants:d}=o,p=Object.keys(u).map(g=>{const v=l?.[g],y=d?.[g];if(v===null)return null;const C=Qh(v)||Qh(y);return u[g][C]}),h=l&&Object.entries(l).reduce((g,v)=>{let[y,C]=v;return C===void 0||(g[y]=C),g},{}),f=o==null||(s=o.compoundVariants)===null||s===void 0?void 0:s.reduce((g,v)=>{let{class:y,className:C,...D}=v;return Object.entries(D).every(N=>{let[A,L]=N;return Array.isArray(L)?L.includes({...d,...h}[A]):{...d,...h}[A]===L})?[...g,y,C]:g},[]);return Zh(a,p,f,l?.class,l?.className)},i_=l_("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",{variants:{variant:{default:"bg-primary text-primary-foreground hover:bg-primary/90",destructive:"bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",outline:"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",secondary:"bg-secondary text-secondary-foreground hover:bg-secondary/80",ghost:"hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",link:"text-primary underline-offset-4 hover:underline"},size:{default:"h-9 px-4 py-2 has-[>svg]:px-3",sm:"h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",lg:"h-10 rounded-md px-6 has-[>svg]:px-4",icon:"size-9","icon-sm":"size-8","icon-lg":"size-10"}},defaultVariants:{variant:"default",size:"default"}});function U0({className:a,variant:o="default",size:l="default",asChild:s=!1,...u}){const d=s?e_:"button";return K.jsx(d,{"code-path":"src/components/ui/button.tsx:52:5","data-slot":"button","data-variant":o,"data-size":l,className:Po(i_({variant:o,size:l,className:a})),...u})}function s_(){const a="https://auth.kimi.com",o="1a0acf59-c082-8794-8000-0000a7b1e0e1",l=`${window.location.origin}/api/oauth/callback`,s=btoa(l),u=new URL(`${a}/api/oauth/authorize`);return u.searchParams.set("client_id",o),u.searchParams.set("redirect_uri",l),u.searchParams.set("response_type","code"),u.searchParams.set("scope","profile"),u.searchParams.set("state",s),u.toString()}function c_(){return K.jsx("div",{"code-path":"src/pages/Login.tsx:22:5",className:"min-h-screen flex items-center justify-center",children:K.jsxs(D0,{"code-path":"src/pages/Login.tsx:23:7",className:"w-full max-w-sm",children:[K.jsx(z0,{"code-path":"src/pages/Login.tsx:24:9",className:"text-center",children:K.jsx(j0,{"code-path":"src/pages/Login.tsx:25:11",children:"Welcome"})}),K.jsx(N0,{"code-path":"src/pages/Login.tsx:27:9",children:K.jsx(U0,{"code-path":"src/pages/Login.tsx:28:11",className:"w-full",size:"lg",onClick:()=>{window.location.href=s_()},children:"Sign in with Kimi"})})]})})}function u_(){return K.jsx("div",{"code-path":"src/pages/NotFound.tsx:7:5",className:"min-h-screen flex items-center justify-center",children:K.jsxs(D0,{"code-path":"src/pages/NotFound.tsx:8:7",className:"w-full max-w-sm text-center",children:[K.jsx(z0,{"code-path":"src/pages/NotFound.tsx:9:9",children:K.jsx(j0,{"code-path":"src/pages/NotFound.tsx:10:11",className:"text-4xl font-bold",children:"404"})}),K.jsxs(N0,{"code-path":"src/pages/NotFound.tsx:12:9",className:"space-y-4",children:[K.jsx("p",{"code-path":"src/pages/NotFound.tsx:13:11",className:"text-muted-foreground",children:"Page not found"}),K.jsx(U0,{"code-path":"src/pages/NotFound.tsx:14:11",asChild:!0,className:"w-full",children:K.jsx(ju,{"code-path":"src/pages/NotFound.tsx:15:13",to:"/",children:"Back to Home"})})]})]})})}function d_(){return K.jsxs(x1,{"code-path":"src/App.tsx:9:5",children:[K.jsx(Wt,{"code-path":"src/App.tsx:10:7",path:"/",element:K.jsx(iw,{"code-path":"src/App.tsx:10:32"})}),K.jsx(Wt,{"code-path":"src/App.tsx:12:7",path:"/exa",element:K.jsx(hr,{"code-path":"src/App.tsx:12:35",page:"exa"})}),K.jsx(Wt,{"code-path":"src/App.tsx:13:7",path:"/bloat",element:K.jsx(hr,{"code-path":"src/App.tsx:13:37",page:"bloat"})}),K.jsx(Wt,{"code-path":"src/App.tsx:14:7",path:"/speedrun",element:K.jsx(hr,{"code-path":"src/App.tsx:14:40",page:"speedrun"})}),K.jsx(Wt,{"code-path":"src/App.tsx:15:7",path:"/omegag",element:K.jsx(hr,{"code-path":"src/App.tsx:15:38",page:"omegag"})}),K.jsx(Wt,{"code-path":"src/App.tsx:16:7",path:"/omarchy-usage",element:K.jsx(hr,{"code-path":"src/App.tsx:16:45",page:"omarchy"})}),K.jsx(Wt,{"code-path":"src/App.tsx:17:7",path:"/login",element:K.jsx(c_,{"code-path":"src/App.tsx:17:37"})}),K.jsx(Wt,{"code-path":"src/App.tsx:18:7",path:"*",element:K.jsx(u_,{"code-path":"src/App.tsx:18:32"})})]})}xy.createRoot(document.getElementById("root")).render(K.jsx(_.StrictMode,{"code-path":"src/main.tsx:10:3",children:K.jsx(Q1,{"code-path":"src/main.tsx:11:5",children:K.jsx(Nk,{"code-path":"src/main.tsx:12:7",children:K.jsx(d_,{"code-path":"src/main.tsx:13:9"})})})}));
