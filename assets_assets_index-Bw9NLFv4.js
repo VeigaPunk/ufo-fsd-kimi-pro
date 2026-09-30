@@ -1090,7 +1090,7 @@ done</pre>
     { n: "punk-records-brain", v: "0.2.0", cat: "agents", rinnegan: false, d: "Vegapunk-style multi-personality round table: Stella routes satellites, the conversation is the deliverable.", c: 'Skill(skill=\\"punk-records-brain\\")' },
     { n: "spoderman", v: "0.2.0", cat: "security", d: "Attack harness & hook safety research for agent runtimes.", c: "bash ./spoderman validate --hooks" },
     { n: "the-almanacker", v: "0.2.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — Gemini Notebook / NotebookLM adapter (deep-dive audio, sources, studio).", c: 'almanack create "…" && almanack studio audio deep-dive --length long "…"' },
-    { n: "the-kimiraikoner", v: "0.1.0", cat: "adapters", rinnegan: true, d: "Kimi web UI adapter (agent-browser / CDP).", c: "agent-browser session --host kimi" },
+    { n: "the-kimiraikoner", v: "0.1.0", cat: "adapters", rinnegan: true, d: "The web-surface driver of the kimi.ai web interface (agent-browser / CDP).", c: "agent-browser session --host kimi" },
     { n: "the-musketeer", v: "0.3.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — Grok web UI adapter — Expert/Fast/Heavy, Imagine, Automations (CDP).", c: 'grok-web "…"  # GROK_MODE=Expert' },
     { n: "the-netsshark", v: "0.2.0", cat: "system-audit", rinnegan: true, d: "System audit — Empirical DNS, routing, proxy, firewall, MTU, and connectivity audits.", c: 'codex "Use the-netsshark skill"' },
     { n: "the-puppeteer", v: "0.2.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — ChatGPT web UI bridge — Pro, Chat/Work, tools, fire-and-forget (CDP).", c: 'chitchat --new-chat "..."' },
