@@ -1150,7 +1150,7 @@ done</pre>
         <div class="plug-head">
           <span class="plug-name">\${esc(p.n)}</span>
           <span class="plug-ver">\${isPage || isStandalone ? esc(p.v) : "v" + esc(p.v)}</span>
-          <span class="plug-cat">\${esc(p.cat || "tools")}</span>
+          \${p.cat === "burnerchrome" ? '<a class="plug-cat" style="color:var(--green);text-decoration:underline" href="https://ds4cc.com/burnerchrome" target="_blank" rel="noopener">burnerchrome ↗</a>' : '<span class="plug-cat">' + esc(p.cat || "tools") + '</span>'}
         </div>
         <p class="plug-desc">\${esc(p.d)}</p>
         <div class="plug-cmd" title="key command">\${esc(p.c)}</div>
