@@ -1078,7 +1078,7 @@ done</pre>
 
   const REPO = "https://github.com/VeigaPunk/ds4cc-marketplace";
   const PLUGINS = [
-    { n: "aaronplug", v: "0.4.0", cat: "research", rinnegan: true, d: "Academic paper retrieval across arXiv, Semantic Scholar and Sci-Hub.", c: 'npx @veigapunk/aaron papers search "..."' },
+    { n: "aaronplug", v: "0.4.0", cat: "research", rinnegan: true, d: "Academic paper retrieval across arXiv, Semantic Scholar and Sci-Hub. Fetches books directly from where you install it to.", c: 'npx @veigapunk/aaron papers search "..."' },
     { n: "ds4cc", v: "0.3.0", cat: "meta", rinnegan: true, d: "Marketplace meta-plugin — discover/install plugins and run ds4cc/orch mode.", c: "codex plugin marketplace add VeigaPunk/ds4cc-marketplace" },
     { n: "godspeed-codex-command", v: "0.2.0", cat: "commands", d: "Command-mode bootstrap & Codex posture controls.", c: "bash ./scripts/install-commands.sh" },
     { n: "godspeed-core", v: "0.2.0", cat: "orchestration", rinnegan: true, d: "Adaptive execution doctrine & Pareto walk policy for long tasks.", c: 'codex "godspeed: <task>"' },
@@ -1089,11 +1089,11 @@ done</pre>
     { n: "myskills", v: "0.2.0", cat: "skills", d: "Curated skill inventory & workflow helpers, discoverable in-session.", c: "Open the Codex TUI and use /skills" },
     { n: "punk-records-brain", v: "0.2.0", cat: "agents", rinnegan: false, d: "Vegapunk-style multi-personality round table: Stella routes satellites, the conversation is the deliverable.", c: 'Skill(skill=\\"punk-records-brain\\")' },
     { n: "spoderman", v: "0.2.0", cat: "security", d: "Attack harness & hook safety research for agent runtimes.", c: "bash ./spoderman validate --hooks" },
-    { n: "the-almanacker", v: "0.2.1", cat: "adapters", rinnegan: true, d: "Gemini Notebook / NotebookLM adapter (deep-dive audio, sources, studio).", c: 'almanack create "…" && almanack studio audio deep-dive --length long "…"' },
+    { n: "the-almanacker", v: "0.2.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — Gemini Notebook / NotebookLM adapter (deep-dive audio, sources, studio).", c: 'almanack create "…" && almanack studio audio deep-dive --length long "…"' },
     { n: "the-kimiraikoner", v: "0.1.0", cat: "adapters", rinnegan: true, d: "Kimi web UI adapter (agent-browser / CDP).", c: "agent-browser session --host kimi" },
-    { n: "the-musketeer", v: "0.3.1", cat: "adapters", rinnegan: true, d: "Grok web UI adapter — Expert/Fast/Heavy, Imagine, Automations (CDP).", c: 'grok-web "…"  # GROK_MODE=Expert' },
-    { n: "the-netsshark", v: "0.2.0", cat: "network", rinnegan: true, d: "Empirical DNS, routing, proxy, firewall, MTU, and connectivity audits.", c: 'codex "Use the-netsshark skill"' },
-    { n: "the-puppeteer", v: "0.2.1", cat: "adapters", rinnegan: true, d: "ChatGPT web UI bridge — Pro, Chat/Work, tools, fire-and-forget (CDP).", c: 'chitchat --new-chat "..."' },
+    { n: "the-musketeer", v: "0.3.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — Grok web UI adapter — Expert/Fast/Heavy, Imagine, Automations (CDP).", c: 'grok-web "…"  # GROK_MODE=Expert' },
+    { n: "the-netsshark", v: "0.2.0", cat: "system-audit", rinnegan: true, d: "System audit — Empirical DNS, routing, proxy, firewall, MTU, and connectivity audits.", c: 'codex "Use the-netsshark skill"' },
+    { n: "the-puppeteer", v: "0.2.1", cat: "burnerchrome", rinnegan: true, d: "Burner Chrome family — ChatGPT web UI bridge — Pro, Chat/Work, tools, fire-and-forget (CDP).", c: 'chitchat --new-chat "..."' },
     { n: "sekhmet", v: "0.1.1", cat: "swarm", rinnegan: true, d: "Always-available Codex Titanium swarm (xbreed L3). Up to 64 concurrent runners.", c: "sekhmet swarm --direct -j 64 --tasks-file tasks.txt" },
     { n: "xbrd-gdsp-fknpft", v: "8.16.137", cat: "orchestration", rinnegan: false, d: "Multimodel dispatch (xask/xbreed) & benchmark workflows.", c: "cargo build --release && ./target/release/xbreed --help" },
     { n: "xbrd-selector", v: "0.1.1", cat: "orchestration", d: "Model/agent selector helpers for xbreed stacks.", c: 'codex \\"Use xbrd-selector\\"' },
